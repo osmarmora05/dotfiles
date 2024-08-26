@@ -1,0 +1,552 @@
+/* Oxocarbon */
+
+/* @define-color background #161616;
+@define-color background-alt #262626;
+@define-color background-focus rgba(255, 255, 255, 0.1);
+@define-color border rgba(255, 255, 255, 0.1);
+@define-color red #ff7eb6;
+@define-color orange #da8548;
+@define-color yellow #ffe97b;
+@define-color green #42be65;
+@define-color blue #3ddbd9;
+@define-color gray #dde1e6;
+@define-color black rgb(28, 28, 30);
+@define-color white #ffffff; */
+
+/* Dracula */
+
+/* @define-color background           #282a36;
+@define-color background-alt       #44475a;
+@define-color white                #f8f8f2;
+@define-color gray                 #6272a4;
+@define-color blue                 #8be9fd;
+@define-color green                #50fa7b;
+@define-color orange               #ffb86c;
+@define-color magenta              #ff79c6;
+@define-color violet               #bd93f9;
+@define-color red                  #ff5555;
+@define-color yellow               #f1fa8c;
+@define-color border               rgba(255, 255, 255, 0.1); */
+
+/* Onedark */
+
+/* @define-color background           #1e2127;
+@define-color background-alt       #2C303A;
+@define-color white                #bbc2cf;
+@define-color gray                 #5B6268;
+@define-color blue                 #46d9ff;
+@define-color green                #98be65;
+@define-color orange               #da8548;
+@define-color magenta              #c678dd;
+@define-color violet               #a9a1e1;
+@define-color red                  #ff6c6b;
+@define-color yellow               #ecbe7b;
+@define-color border               rgba(255, 255, 255, 0.1); */
+
+/* Dark decay */
+
+/* @define-color background           #101419; 
+@define-color background-alt       #1c252c;
+@define-color white                #b6beca;
+@define-color gray                 #5B6268;
+@define-color blue                 #90daff;
+@define-color green                #94f7c5;
+@define-color orange               #da8548;
+@define-color magenta              #e2a6ff;
+@define-color violet               #a9a1e1;
+@define-color red                  #fc7b81;
+@define-color yellow               #ffeba6; 
+@define-color border               rgba(255, 255, 255, 0.1); */
+
+/* Amarena */
+
+@define-color background           #1A2026; 
+@define-color background-alt       #222a32;
+@define-color white                #FFFFFF;
+@define-color gray                 #4f5e6c;
+@define-color blue                 #7FE4D2;
+@define-color green                #94CF95;
+@define-color orange               #f5a97f;
+@define-color magenta              #CD84C8;
+@define-color violet               #6EC1D6;
+@define-color red                  #FB6396;
+@define-color yellow               #F692B2; 
+@define-color border               rgba(255, 255, 255, 0.1);
+
+/* Oxocarbon */
+
+/* @define-color background           #161616;
+@define-color background-alt       #262626;
+@define-color white                #ffffff;
+@define-color gray                 #dde1e6;
+@define-color blue                 #3ddbd9;
+@define-color green                #42be65;
+@define-color orange               #da8548;
+@define-color magenta              #ff7eb6;
+@define-color violet               #a9a1e1;
+@define-color red                  #ee5396;
+@define-color yellow               #ffe97b;
+@define-color border               rgba(255, 255, 255, 0.1); */
+
+/* Palenight */
+
+/* @define-color background           #292D3E; 
+@define-color background-alt       #242837;
+@define-color white                #EEFFFF;
+@define-color gray                 #676E95;
+@define-color blue                 #80cbc4;
+@define-color green                #c3e88d;
+@define-color orange               #f78c6c;
+@define-color magenta              #c792ea;
+@define-color violet               #bb80b3;
+@define-color red                  #ff5370;
+@define-color yellow               #ffcb6b;
+@define-color border               rgba(255, 255, 255, 0.1); */
+
+
+* {
+  all: unset;
+  font-family: "IBM Plex Sans", "Material Icons", "Helvetica", "Arial",
+    "sans-serif";
+  font-size: 14px;
+  transition: 200ms;
+}
+
+/*** Global ***/
+progress,
+progressbar,
+trough {
+  border: 1px solid @border;
+  border-radius: 16px;
+}
+
+trough {
+  background: @background-alt;
+}
+
+.notification.low,
+.notification.normal {
+  border: 1px solid @border;
+}
+
+.notification.low progress,
+.notification.normal progress {
+  background: @blue;
+}
+
+.notification.critical {
+  border: 1px solid @red;
+}
+
+.notification.critical progress {
+  background: @red;
+}
+
+.summary {
+  color: @white;
+}
+
+.body {
+  color: alpha(@white, 0.7);
+}
+
+.time {
+  color: alpha(@white, 0.7);
+}
+
+.app-icon,
+.image {
+  -gtk-icon-effect: none;
+  margin: 0.25rem;
+}
+
+.notification-action {
+  color: @white;
+  background: @background-alt;
+  border: 1px solid @border;
+  border-radius: 8px;
+  margin: 0.5rem;
+}
+
+.notification-action:hover {
+  background: @background-focus;
+  color: @white;
+}
+
+.notification-action:active {
+  background: @blue;
+  color: @white;
+}
+
+.close-button {
+  margin: 0.5rem;
+  padding: 0.25rem;
+  border-radius: 8px;
+  color: @black;
+  background: @red;
+}
+
+.close-button:hover {
+  background: lighter(@red);
+  color: lighter(@black);
+}
+
+.close-button:active {
+  background: @red;
+  color: @background;
+}
+
+/*** Notifications ***/
+.floating-notifications.background .notification-row .notification-background {
+  background: @background;
+  border-radius: 16px;
+  color: @white;
+  margin: 0.25rem;
+  padding: 0;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification {
+  padding: 0.5rem;
+  border-radius: 16px;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content {
+  margin: 0.5rem;
+}
+
+/*** Notifications Group ***/
+.notification-group {
+  /* Styling only for Grouped Notifications */
+}
+
+.notification-group.low {
+  /* Low Priority Group */
+}
+
+.notification-group.normal {
+  /* Low Priority Group */
+}
+
+.notification-group.critical {
+  /* Low Priority Group */
+}
+
+.notification-group .notification-group-buttons,
+.notification-group .notification-group-headers {
+  margin: 0.5rem;
+  color: @white;
+}
+
+.notification-group .notification-group-headers {
+  /* Notification Group Headers */
+}
+
+.notification-group .notification-group-headers .notification-group-icon {
+  color: @white;
+}
+
+.notification-group .notification-group-headers .notification-group-header {
+  color: @white;
+}
+
+.notification-group .notification-group-buttons {
+  /* Notification Group Buttons */
+}
+
+.notification-group.collapsed .notification-row .notification {
+  background: @background-alt;
+}
+
+.notification-group.collapsed .notification-row:not(:last-child) {
+  /* Top notification in stack */
+  /* Set lower stacked notifications opacity to 0 */
+}
+
+.notification-group.collapsed
+  .notification-row:not(:last-child)
+  .notification-action,
+.notification-group.collapsed
+  .notification-row:not(:last-child)
+  .notification-default-action {
+  opacity: 0;
+}
+
+.notification-group.collapsed:hover
+  .notification-row:not(:only-child)
+  .notification {
+  background: @background-focus;
+}
+
+/*** Control Center ***/
+.control-center {
+  background: @background;
+  border: 1px solid @border;
+  border-radius: 16px;
+  color: @white;
+  padding: 1rem;
+}
+
+.control-center-list {
+  background: transparent;
+}
+
+.control-center .notification-row .notification-background {
+  background: @background-alt;
+  border-radius: 8px;
+  color: @white;
+  margin: 0.5rem;
+}
+
+.control-center .notification-row .notification-background .notification {
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content {
+  margin: 0.5rem;
+}
+
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content
+  .time {
+  margin-right: 0.75rem;
+}
+
+.control-center .notification-row .notification-background:hover {
+  background: @background-focus;
+  color: @white;
+}
+
+.control-center .notification-row .notification-background:active {
+  background: @blue;
+  color: @white;
+}
+
+/*** Widgets ***/
+/* Title widget */
+.widget-title {
+  color: @white;
+  margin: 0.5rem;
+}
+
+.widget-title > label {
+  font-weight: bold;
+}
+
+.widget-title > button {
+  background: @background-alt;
+  border: 1px solid @border;
+  border-radius: 8px;
+  color: @white;
+  padding: 0.5rem;
+}
+
+.widget-title > button:hover {
+  background: @background-focus;
+}
+
+/* DND Widget */
+.widget-dnd {
+  color: @white;
+  margin: 0.5rem;
+}
+
+.widget-dnd > label {
+  font-weight: bold;
+}
+
+.widget-dnd > switch {
+  background: @background-alt;
+  border: 1px solid @border;
+  border-radius: 8px;
+}
+
+.widget-dnd > switch:hover {
+  background: @background-focus;
+}
+
+.widget-dnd > switch:checked {
+  background: @blue;
+}
+
+.widget-dnd > switch slider {
+  background: @background-focus;
+  border-radius: 8px;
+  padding: 0.25rem;
+}
+
+/* Mpris widget */
+.widget-mpris {
+  color: @white;
+  box-shadow: none;
+}
+
+.widget-mpris .widget-mpris-player {
+  background: @background-alt;
+  border: 1px solid @border;
+  border-radius: 8px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.widget-mpris .widget-mpris-player button:hover {
+  background: @background-focus;
+}
+
+.widget-mpris .widget-mpris-player .widget-mpris-album-art {
+  border-radius: 16px;
+}
+
+.widget-mpris .widget-mpris-player .widget-mpris-title {
+  font-weight: bold;
+}
+
+.widget-mpris .widget-mpris-player .widget-mpris-subtitle {
+  font-weight: normal;
+}
+
+.widget-mpris .widget-mpris-player > box > button {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 0.25rem;
+}
+
+.widget-mpris .widget-mpris-player > box > button:hover {
+  background: @background-focus;
+  border: 1px solid @border;
+}
+
+.widget-mpris > box > button {
+  /* Change player side buttons */
+}
+
+.widget-mpris > box > button:disabled {
+  /* Change player side buttons insensitive */
+}
+
+/* Backlight and volume widgets */
+.widget-backlight,
+.widget-volume {
+    background-color: @background-alt;
+    border-top: none;
+    border-bottom: none; font-size: 13px;
+    font-weight: 600;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.widget-backlight {
+    border-radius: 0px 0px 8px 8px;
+    /* border: 1px solid @border; */
+    border-left: 1px solid @border;
+    border-right: 1px solid @border;
+    border-bottom: 1px solid @border;
+}
+
+.widget-volume {
+    border-radius: 8px 8px 0px 0px;
+    border-left: 1px solid @border;
+    border-right: 1px solid @border;
+    border-top: 1px solid @border;
+}
+
+.widget-volume > box {
+    background: @background-alt;
+    border-radius: 4px;
+    margin: 5px 10px 0px 10px;
+    min-height: 50px;
+    border: none;
+}
+.widget-volume > box > label {
+    min-width: 50px;
+    padding: 0px;
+}
+.widget-volume > box > button {
+    min-width: 50px;
+    box-shadow: none;
+    padding: 0px;
+}
+.widget-volume > box > button:hover {
+    background: @background-alt;
+}
+
+.widget-volume > revealer > list {
+    background: @background-alt;
+    border-radius: 4px;
+    margin-top: 5px;
+    padding: 0px;
+}
+.widget-volume > revealer > list > row {
+    padding-left: 10px;
+    min-height: 40px;
+    background: transparent;
+}
+.widget-volume > revealer > list > row:hover {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 4px;
+}
+
+.widget-backlight > scale {
+    background: @background-alt;
+    border-radius: 0px 4px 4px 0px;
+    margin: 5px 10px 5px 0px;
+    padding: 0px 10px 0px 0px;
+    min-height: 50px;
+}
+.widget-backlight > label {
+    background: @background-alt;
+    margin: 5px 0px 5px 10px;
+    border-radius: 4px 0px 0px 4px;
+    padding: 0px;
+    min-height: 50px;
+    min-width: 50px;
+}
+.widget-backlight > box {
+    border: none;
+}
+
+/* Sliders */
+scale {
+    padding: 0px;
+    margin: 0px 10px 0px 10px;
+}
+
+scale trough {
+    border-radius: 4px;
+    background: @background-alt;
+}
+
+scale highlight {
+    border-radius: 5px;
+    min-height: 10px;
+    margin-right: -5px;
+    background-color: @blue;
+}
+
+scale slider {
+    margin: -10px;
+    min-width: 10px;
+    min-height: 10px;
+    background: transparent;
+    box-shadow: none;
+    padding: 0px;
+    background-color: @white;
+    border-radius: 10px;
+    padding: 1px;
+}

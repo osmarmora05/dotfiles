@@ -1,0 +1,334 @@
+/*colors*/
+/* Dracula */
+
+/* @define-color colbg       #282a36;
+@define-color colbg2      #44475a;
+@define-color colfg       #f8f8f2;
+@define-color colgrey     #6272a4;
+@define-color colcyan     #8be9fd;
+@define-color colgreen    #50fa7b;
+@define-color colorange   #ffb86c;
+@define-color colmagenta  #ff79c6;
+@define-color colviolet   #bd93f9;
+@define-color colred      #ff5555;
+@define-color colyellow   #f1fa8c; 
+@define-color border rgba(255, 255, 255, 0.1);*/
+
+/*Onedark*/
+
+/* 
+@define-color colbg #1e2127;
+@define-color colbg2 #2C303A;
+@define-color colfg #bbc2cf;
+@define-color colgrey #5B6268;
+@define-color colcyan #46d9ff;
+@define-color colgreen #98be65;
+@define-color colorange #da8548;
+@define-color colmagenta #c678dd;
+@define-color colviolet #a9a1e1;
+@define-color colred #ff6c6b;
+@define-color colyellow #ecbe7b; 
+@define-color border rgba(255, 255, 255, 0.1);*/
+
+/*Dark decay*/
+
+/* @define-color colbg     #101419; 
+@define-color colbg2    #1c252c;
+@define-color colfg     #b6beca;
+@define-color colgrey   #5B6268;
+@define-color colcyan   #90daff;
+@define-color colgreen  #94f7c5;
+@define-color colorange #da8548;
+@define-color colmagenta #e2a6ff;
+@define-color colviolet #a9a1e1;
+@define-color colred    #fc7b81;
+@define-color colyellow #ffeba6; 
+@define-color border rgba(255, 255, 255, 0.1);*/
+
+/*Amarena*/
+
+@define-color colbg     #1A2026; 
+@define-color colbg2    #222a32;
+@define-color colfg     #FFFFFF;
+@define-color colgrey   #4f5e6c;
+@define-color colcyan   #7FE4D2;
+@define-color colgreen  #94CF95;
+@define-color colorange #f5a97f;
+@define-color colmagenta #CD84C8;
+@define-color colviolet #6EC1D6;
+@define-color colred    #FB6396;
+@define-color colyellow #F692B2; 
+@define-color border rgba(255, 255, 255, 0.1);
+
+/*Oxocarbon*/
+
+/* @define-color colbg        #161616;
+@define-color colbg2       #262626;
+@define-color colfg        #ffffff;
+@define-color colgrey      #dde1e6;
+@define-color colcyan      #3ddbd9;
+@define-color colgreen     #42be65;
+@define-color colorange    #da8548;
+@define-color colmagenta   #ff7eb6;
+@define-color colviolet    #a9a1e1;
+@define-color colred       #ee5396;
+@define-color colyellow    #ffe97b;
+@define-color border rgba(255, 255, 255, 0.1); */
+
+/*palenight*/
+
+/* @define-color colbg        #292D3E; 
+@define-color colbg2       #242837;
+@define-color colfg        #EEFFFF;
+@define-color colgrey      #676E95;
+@define-color colcyan      #80cbc4;
+@define-color colgreen     #c3e88d;
+@define-color colorange    #f78c6c;
+@define-color colmagenta   #c792ea;
+@define-color colviolet    #bb80b3;
+@define-color colred       #ff5370;
+@define-color colyellow    #ffcb6b;
+@define-color border rgba(255, 255, 255, 0.1);*/
+
+* {
+  border: 10px;
+  border-radius: 0;
+  font-family: "IBM Plex Sans", "Material Icons", "Helvetica", "Arial",
+    "sans-serif";
+  font-size: 15px;
+}
+
+window#waybar {
+  background-color: @colbg;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+window#waybar > box {
+  padding: 10px 5px;
+}
+
+window#waybar.empty #window {
+  background: transparent;
+}
+
+#tags button {
+  background-color: @colbg;
+  border-radius: 0px;
+  color: @colgrey;
+}
+
+#tags button.occupied {
+  background-color: @colbg;
+  color: @colfg;
+}
+
+#tags button.focused {
+  background-color: @colgrey;
+  color: @colfg;
+}
+
+#window {
+  color: @colviolet;
+}
+
+#custom-wmname {
+  font-size: 20px;
+  padding: 10px 2px 10px 0px;
+  color: @colbg;
+  background: @colcyan;
+  border-radius: 10px;
+  border: 1px solid @border;
+}
+
+#workspaces {
+  margin: 8px 0px;
+}
+
+#workspaces button {
+  background-color: @colbg;
+  padding: 10px 5px;
+  border-radius: 10px;
+  color: @colfg;
+}
+
+#workspaces button.active {
+  background-color: @colbg2;
+  border-bottom: 2px solid @colviolet;
+  color: @colfg;
+}
+
+#workspaces button.urgent {
+  background-color: @colred;
+  color: @colfg;
+}
+
+#workspaces button.hidden {
+  background-color: @colbg;
+  color: @colfg;
+}
+
+#workspaces button.focused {
+  border: 1px solid @border;
+  background-color: @colbg2;
+}
+
+#window {
+  color: @colviolet;
+}
+
+#custom-dwl_layout {
+  color: @colviolet;
+}
+
+#custom-dwl_title {
+  color: @colmagenta;
+}
+
+#custom-dwl_tag {
+  color: @colgrey;
+}
+
+#custom-dwl_tag.selected {
+  border-top: 1px solid @colmagenta;
+}
+
+#custom-dwl_tag.urgent {
+  background-color: @colred;
+}
+
+#custom-dwl_tag.active {
+  color: @colfg;
+}
+
+#window {
+  background: @colbg2;
+  padding: 0px 10px;
+  background-clip: padding-box;
+}
+
+#battery,
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#backlight,
+#tray {
+  padding: 4px 2px 4px 0px;
+  color: @colfg;
+  background: @colbg2;
+}
+
+#network-pulseaudio-backlight-battery {
+  border-radius: 4px;
+  color: @colfg;
+  background: @colbg2;
+  margin-top: 8px;
+  padding: 10px 0px 10px 0px;
+  border: 1px solid @border;
+}
+
+#battery {
+  padding-left: 2px;
+}
+
+#battery.critical:not(.charging) {
+  color: @colred;
+  animation: blink 0.5s steps(12) infinite alternate;
+}
+
+#battery.charging,
+#battery.plugged {
+  color: @colgreen;
+}
+
+#clock {
+  background: @colbg2;
+  color: @colfg;
+  border-radius: 8px;
+  margin-top: 8px;
+  padding: 10px 0px 10px 0px;
+  border: 1px solid @border;
+}
+
+#custom-notification {
+  color: @colyellow;
+  margin-top: 8px;
+}
+
+#pulseaudio-slider highlight {
+  background: @colcyan;
+  border: 1px solid @colcyan;
+}
+
+#backlight-slider highlight {
+  background: @colcyan;
+  border: 1px solid @colcyan;
+}
+
+/* Power Menu */
+#powermenu {
+  margin-top: 8px;
+}
+
+#custom-exit {
+  color: @colcyan;
+}
+
+#custom-lock {
+  color: @colgreen;
+}
+
+#custom-suspend {
+  color: @colyellow;
+}
+
+#custom-reboot {
+  color: @colorange;
+  margin-bottom: 8px;
+}
+
+#custom-power {
+  background: @colred;
+  padding: 10px 2px 10px 0px;
+  border-radius: 10px;
+  color: @colbg;
+  border: 1px solid @border;
+}
+
+#powermenu,
+#custom-exit,
+#custom-lock,
+#custom-suspend,
+#custom-reboot {
+  padding: 4px 2px 4px 0px;
+  border-radius: 8px;
+}
+
+/* #powermenu, */
+#custom-exit:hover,
+#custom-lock:hover,
+#custom-suspend:hover,
+#custom-reboot:hover {
+  background-color: @colbg2;
+}
+
+/* Scales & progress bars */
+scale trough,
+progressbar trough {
+  border-radius: 16px;
+  min-height: 5rem;
+}
+
+scale highlight,
+scale progress,
+progressbar highlight,
+progressbar progress {
+  border-radius: 16px;
+  min-width: 0.5rem;
+}
+
+scale slider {
+  border-radius: 10px;
+}

@@ -1,0 +1,61 @@
+[colors]
+background = "#1a1a1a"  
+cursor_bg = "#d2d2d2"    
+cursor_border = "#d2d2d2"
+cursor_fg = "#252525"    
+foreground = "#d2d2d2"  
+selection_bg = "#535353"
+selection_fg = "#121212"
+split = "#252525"        
+
+ansi = [
+    "#2b2b2b",
+    "#c1374b",
+    "#34a95d",
+    "#d99061",
+    "#7284d2",
+    "#b57dcc",
+    "#65c19f",
+    "#5f5f5f",
+]
+
+brights = [
+    "#252525",
+    "#aa3042",
+    "#2d9451",
+    "#d17a42",
+    "#546ac8",
+    "#a460c0",
+    "#4cb68f",
+    "#535353",
+]
+
+[colors.tab_bar]
+background = "#252525"
+
+[colors.tab_bar.active_tab]
+bg_color = "#121212"
+fg_color = "#d2d2d2"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#252525"
+fg_color = "#d2d2d2"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#2b2b2b"
+fg_color = "#d2d2d2"
+
+[colors.tab.inactive_tab_edge]
+bg_color = "#2b2b2b"
+
+[colors.tab_bar.new_tab]
+bg_color = "#252525"
+fg_color = "#5f5f5f"
+
+[colors.tab.new_tab_hover]
+bg_color = "#2b2b2b"
+fg_color = "#d2d2d2"
+
+[metadata]
+name = 'mar'
+origin_url = 'https://github.com/gwynsav'

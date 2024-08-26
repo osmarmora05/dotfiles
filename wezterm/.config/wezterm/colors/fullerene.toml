@@ -1,0 +1,61 @@
+[colors]
+background = "#161616"  
+cursor_bg = "#8d8d8d"    
+cursor_border = "#1a1b26"
+cursor_fg = "#262626"    
+foreground = "#c6c6c6"  
+selection_bg = "#c6c6c6" 
+selection_fg = "#5e76de"
+split = "#262626"        
+
+ansi = [
+    "#1f1f1f",
+    "#902c3b",
+    "#2a8664",
+    "#d78438",
+    "#546ad8",
+    "#875fd4",
+    "#1f7a89",
+    "#e0e0e0",
+]
+
+brights = [
+    "#262626",
+    "#c1374b",
+    "#32ae80",
+    "#e1a36b",
+    "#738be7",
+    "#9e7ad5",
+    "#2b9eb0",
+    "#c6c6c6",
+]
+
+[colors.tab_bar]
+background = "#262626"
+
+[colors.tab_bar.active_tab]
+bg_color = "#161616"
+fg_color = "#c6c6c6"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#262626"
+fg_color = "#c6c6c6"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#1f1f1f"
+fg_color = "#c6c6c6"
+
+[colors.tab.inactive_tab_edge]
+bg_color = "#1f1f1f"
+
+[colors.tab_bar.new_tab]
+bg_color = "#262626"
+fg_color = "#e0e0e0"
+
+[colors.tab.new_tab_hover]
+bg_color = "#1f1f1f"
+fg_color = "#c6c6c6"
+
+[metadata]
+name = 'fullerene'
+origin_url = 'https://github.com/gwynsav'

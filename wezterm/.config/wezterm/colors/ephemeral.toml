@@ -1,0 +1,61 @@
+[colors]
+background = "#323F4E"  
+cursor_bg = "#F8F8F2"    
+cursor_border = "#F8F8F2"
+cursor_fg = "#354253"    
+foreground = "#F8F8F2"  
+selection_bg = "#526779" 
+selection_fg = "#323F4E"
+split = "#354253"        
+
+ansi = [
+    "#3D4C5F",
+    "#F48FB1",
+    "#A1EFD3",
+    "#F1FA8C",
+    "#92B6F4",
+    "#BD99FF",
+    "#87DFEB",
+    "#5e758a",
+]
+
+brights = [
+    "#354253",
+    "#ef6593",
+    "#78e8bf",
+    "#ebf85f",
+    "#6799ef",
+    "#9d68ff",
+    "#61d4e4",
+    "#526779",
+]
+
+[colors.tab_bar]
+background = "#354253"
+
+[colors.tab_bar.active_tab]
+bg_color = "#323F4E"
+fg_color = "#F8F8F2"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#354253"
+fg_color = "#F8F8F2"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#3D4C5F"
+fg_color = "#F8F8F2"
+
+[colors.tab.inactive_tab_edge]
+bg_color = "#3D4C5F"
+
+[colors.tab_bar.new_tab]
+bg_color = "#354253"
+fg_color = "#5e758a"
+
+[colors.tab.new_tab_hover]
+bg_color = "#3D4C5F"
+fg_color = "#F8F8F2"
+
+[metadata]
+name = 'ephemeral'
+origin_url = 'https://github.com/elenapan/dotfiles/blob/master/.xfiles/ephemeral'

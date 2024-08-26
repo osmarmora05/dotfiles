@@ -1,0 +1,43 @@
+{
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "cSpell.language": "en,es-ES",
+  "debug.allowBreakpointsEverywhere": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontFamily": "'CaskaydiaCove NF'",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.fontWeight": "normal",
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.guides.highlightActiveBracketPair": true,
+  "editor.minimap.enabled": false,
+  "editor.renderLineHighlight": "gutter",
+  "editor.wordWrap": "on",
+  "explorer.confirmDelete": false,
+  "files.autoSave": "afterDelay",
+  "security.workspace.trust.untrustedFiles": "open",
+  "symbols.hidesExplorerArrows": false,
+  "terminal.integrated.fontFamily": "'CaskaydiaCove NF'",
+  "terminal.integrated.fontSize": 14,
+  "window.menuBarVisibility": "toggle",
+  "window.zoomLevel": 1,
+  "workbench.colorCustomizations": {
+    "editorBracketHighlight.foreground1": "#f2cdcd",
+    "editorBracketHighlight.foreground2": "#a6e3a1",
+    "editorBracketHighlight.foreground3": "#fab387",
+    "editorBracketHighlight.foreground4": "#cba6f7",
+    "editorBracketHighlight.foreground5": "#89b4fa",
+    "editorBracketHighlight.foreground6": "#f2cdcd",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#DD100C"
+  },
+  "workbench.iconTheme": "symbols",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+  "breadcrumbs.enabled": false,
+  "workbench.colorTheme": "Tsuki"
+}

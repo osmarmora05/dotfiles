@@ -1,0 +1,61 @@
+[colors]
+background = "#282F37"  
+cursor_bg = "#F1FCF9"    
+cursor_border = "#F1FCF9"
+cursor_fg = "#39424e"    
+foreground = "#F1FCF9"  
+selection_bg = "#4b5a6b" 
+selection_fg = "#282F37"
+split = "#39424e"        
+
+ansi = [
+    "#414c59",
+    "#DB86BA",
+    "#74DD91",
+    "#E49186",
+    "#75DBE1",
+    "#B4A1DB",
+    "#9EE9EA",
+    "#56677a",
+]
+
+brights = [
+    "#39424e",
+    "#d165a7",
+    "#53d577",
+    "#dc7062",
+    "#53d2d9",
+    "#9980ce",
+    "#77e0e1",
+    "#4b5a6b",
+]
+
+[colors.tab_bar]
+background = "#39424e"
+
+[colors.tab_bar.active_tab]
+bg_color = "#282F37"
+fg_color = "#F1FCF9"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#39424e"
+fg_color = "#F1FCF9"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#414c59"
+fg_color = "#F1FCF9"
+
+[colors.tab.inactive_tab_edge]
+bg_color = "#414c59"
+
+[colors.tab_bar.new_tab]
+bg_color = "#39424e"
+fg_color = "#56677a"
+
+[colors.tab.new_tab_hover]
+bg_color = "#414c59"
+fg_color = "#F1FCF9"
+
+[metadata]
+name = 'skyfall'
+origin_url = 'https://github.com/elenapan/dotfiles/blob/master/.xfiles/skyfall'

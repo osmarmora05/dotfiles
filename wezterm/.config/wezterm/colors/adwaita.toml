@@ -1,0 +1,61 @@
+[colors]
+background = "#282828"  
+cursor_bg = "#eeeeee"    
+cursor_border = "#eeeeee"
+cursor_fg = "#3b3b3b"   
+foreground = "#eeeeee"  
+selection_bg = "#8f8f8f"
+selection_fg = "#282828"
+split = "#3b3b3b"        
+
+ansi = [
+    "#444444",
+    "#ed333b",
+    "#57e389",
+    "#ffa348",
+    "#62a0ea",
+    "#f5c2e7",
+    "#c061cb",
+    "#a3a3a3",
+]
+
+brights = [
+    "#3b3b3b",
+    "#e9141d",
+    "#36dd72",
+    "#ff8f21",
+    "#3f8ae5",
+    "#ed95d5",
+    "#b546c2",
+    "#8f8f8f",
+]
+
+[colors.tab_bar]
+background = "#3b3b3b"
+
+[colors.tab_bar.active_tab]
+bg_color = "#282828"
+fg_color = "#eeeeee"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#3b3b3b"
+fg_color = "#eeeeee"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#444444"
+fg_color = "#eeeeee"
+
+[colors.tab.inactive_tab_edge]
+bg_color = "#444444"
+
+[colors.tab_bar.new_tab]
+bg_color = "#3b3b3b"
+fg_color = "#a3a3a3"
+
+[colors.tab.new_tab_hover]
+bg_color = "#444444"
+fg_color = "#eeeeee"
+
+[metadata]
+name = 'Adwaita'
+origin_url = 'https://gnome.pages.gitlab.gnome.org/libadwaita/doc/main/named-colors.html'

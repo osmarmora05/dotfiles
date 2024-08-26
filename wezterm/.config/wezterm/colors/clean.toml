@@ -1,0 +1,61 @@
+[colors]
+background = "#202020"  
+cursor_bg = "#a7a7a7"    
+cursor_border = "#a7a7a7"
+cursor_fg = "#2d2d2d"    
+foreground = "#a7a7a7"  
+selection_bg = "#3e3e3e" 
+selection_fg = "#202020"
+split = "#2d2d2d"        
+
+ansi = [
+    "#343434",
+    "#9d5b61",
+    "#838d69",
+    "#b38d6a",
+    "#606d84",
+    "#766577",
+    "#808fa0",
+    "#474747",
+]
+
+brights = [
+    "#2d2d2d",
+    "#8a5055",
+    "#737c5c",
+    "#a67b54",
+    "#546074",
+    "#675868",
+    "#6c7d91",
+    "#3e3e3e",
+]
+
+[colors.tab_bar]
+background = "#2d2d2d"
+
+[colors.tab_bar.active_tab]
+bg_color = "#202020"
+fg_color = "#a7a7a7"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#2d2d2d"
+fg_color = "#a7a7a7"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#343434"
+fg_color = "#a7a7a7"
+
+[colors.tab.inactive_tab_edge]
+bg_color = "#343434"
+
+[colors.tab_bar.new_tab]
+bg_color = "#2d2d2d"
+fg_color = "#474747"
+
+[colors.tab.new_tab_hover]
+bg_color = "#343434"
+fg_color = "#a7a7a7"
+
+[metadata]
+name = 'clean'
+origin_url = 'https://pastebin.com/wuN8ArN7'

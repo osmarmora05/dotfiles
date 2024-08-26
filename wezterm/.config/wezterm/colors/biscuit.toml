@@ -1,0 +1,61 @@
+[colors]
+background = "#181515"  
+cursor_bg = "#ffe9c7"    
+cursor_border = "#ffe9c7"
+cursor_fg = "#13111c"    
+foreground = "#ffe9c7"  
+selection_bg = "#7f8f8f" 
+selection_fg = "#181515"
+split = "#13111c"        
+
+ansi = [
+    "#161420",
+    "#eb6f92",
+    "#31748f",
+    "#f6c177",
+    "#9ccfd8",
+    "#c4a7e7",
+    "#65c19f",
+    "#93a1a1",
+]
+
+brights = [
+    "#13111c",
+    "#e54a76",
+    "#2b667d",
+    "#f3ae4e",
+    "#7cbfcb",
+    "#ab81dc",
+    "#4cb68f",
+    "#7f8f8f",
+]
+
+[colors.tab_bar]
+background = "#13111c"
+
+[colors.tab_bar.active_tab]
+bg_color = "#181515"
+fg_color = "#ffe9c7"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#13111c"
+fg_color = "#ffe9c7"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#161420"
+fg_color = "#ffe9c7"
+
+[colors.tab.inactive_tab_edge]
+bg_color = "#161420"
+
+[colors.tab_bar.new_tab]
+bg_color = "#13111c"
+fg_color = "#7f8f8f"
+
+[colors.tab.new_tab_hover]
+bg_color = "#161420"
+fg_color = "#ffe9c7"
+
+[metadata]
+name = 'biscuit'
+origin_url = 'https://github.com/Biscuit-Colorscheme/biscuit'

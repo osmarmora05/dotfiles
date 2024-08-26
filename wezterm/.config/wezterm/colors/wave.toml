@@ -1,0 +1,61 @@
+[colors]
+background = "#0e1718"  
+cursor_bg = "#c5d7d7"    
+cursor_border = "#c5d7d7"
+cursor_fg = "#0b1314"    
+foreground = "#c5d7d7"  
+selection_bg = "#464c4d" 
+selection_fg = "#0e1718"
+split = "#0b1314"        
+
+ansi = [
+    "#0d1617",
+    "#df5b61",
+    "#6ec587",
+    "#deb26a",
+    "#659bdb",
+    "#c167d9",
+    "#7dcfff",
+    "#505758",
+]
+
+brights = [
+    "#0b1314",
+    "#d83b42",
+    "#53ba71",
+    "#d6a14a",
+    "#4686d3",
+    "#b448d1",
+    "#4fbeff",
+    "#464c4d",
+]
+
+[colors.tab_bar]
+background = "#0b1314"
+
+[colors.tab_bar.active_tab]
+bg_color = "#0e1718"
+fg_color = "#c5d7d7"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#0b1314"
+fg_color = "#c5d7d7"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#0d1617"
+fg_color = "#c5d7d7"
+
+[colors.tab.inactive_tab_edge]
+bg_color = "#0d1617"
+
+[colors.tab_bar.new_tab]
+bg_color = "#0b1314"
+fg_color = "#505758"
+
+[colors.tab.new_tab_hover]
+bg_color = "#0d1617"
+fg_color = "#c5d7d7"
+
+[metadata]
+name = 'Wave'
+origin_url = 'https://github.com/chadcat7/crystal/tree/the-awesome-config'

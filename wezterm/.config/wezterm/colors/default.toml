@@ -1,0 +1,61 @@
+[colors]
+background = "#222222"  
+cursor_bg = "#aaaaaa"    
+cursor_border = "#aaaaaa"
+cursor_fg = "#49515f"    
+foreground = "#aaaaaa"  
+selection_bg = "#6c7481" 
+selection_fg = "#222222"
+split = "#49515f"        
+
+ansi = [
+    "#535d6c",
+    "#ff0000",
+    "#00ff00",
+    "#ffff00",
+    "#0000ff",
+    "#ff00ff",
+    "#00ffff",
+    "#7d8592",
+]
+
+brights = [
+    "#49515f",
+    "#e00000",
+    "#00e000",
+    "#e0e000",
+    "#0000e0",
+    "#e000e0",
+    "#00e0e0",
+    "#6c7481",
+]
+
+[colors.tab_bar]
+background = "#49515f"
+
+[colors.tab_bar.active_tab]
+bg_color = "#222222"
+fg_color = "#aaaaaa"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#49515f"
+fg_color = "#aaaaaa"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#535d6c"
+fg_color = "#aaaaaa"
+
+[colors.tab.inactive_tab_edge]
+bg_color = "#535d6c"
+
+[colors.tab_bar.new_tab]
+bg_color = "#49515f"
+fg_color = "#7d8592"
+
+[colors.tab.new_tab_hover]
+bg_color = "#535d6c"
+fg_color = "#aaaaaa"
+
+[metadata]
+name = 'default'
+origin_url = 'https://github.com/gwynsav'

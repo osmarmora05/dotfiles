@@ -1,0 +1,235 @@
+{
+  "layer": "top",
+  "width": 50,
+  "position": "left",
+  "modules-left": ["custom/wmname", "sway/workspaces"],
+  "modules-right": [
+    "tray",
+    "custom/notification",
+    "group/network-pulseaudio-backlight-battery",
+    "clock",
+    "group/powermenu"
+  ],
+
+  "group/network-pulseaudio-backlight-battery": {
+    "orientation": "vertical",
+    "modules": [
+      "network",
+      "group/audio-slider",
+      "group/light-slider",
+      "battery"
+    ]
+  },
+
+  // Network
+  "network": {
+    "format-wifi": "󰤨",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "",
+    "tooltip-format-wifi": "WiFi: {essid} ({signalStrength}%)\n󰅃 {bandwidthUpBytes} 󰅀 {bandwidthDownBytes}",
+    "tooltip-format-ethernet": "Ethernet: {ifname}\n󰅃 {bandwidthUpBytes} 󰅀 {bandwidthDownBytes}",
+    "tooltip-format-disconnected": "Disconnected"
+  },
+
+  // Pulseaudio
+  "group/audio-slider": {
+    "orientation": "vertical",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "audio-slider-child",
+      "transition-left-to-right": true
+    },
+
+    "modules": ["pulseaudio", "pulseaudio/slider"]
+  },
+
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-bluetooth": "󰂯",
+    "format-bluetooth-muted": "󰖁",
+    "format-muted": " ",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": " ",
+      "default": ["", "", ""]
+    },
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "tooltip-format": "Volume: {volume}%"
+  },
+
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "vertical"
+  },
+
+  // Backlight
+  "group/light-slider": {
+    "orientation": "vertical",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "light-slider-child",
+      "transition-left-to-right": true
+    },
+
+    "modules": ["backlight", "backlight/slider"]
+  },
+
+  "backlight": {
+    "device": "amdgpu_bl2",
+    "format": "{icon}",
+    "format-icons": ["󰝦", "󰪞", "󰪟", "󰪠", "󰪡", "󰪢", "󰪣", "󰪤", "󰪥"],
+    "tooltip-format": "Backlight: {percent}%"
+  },
+
+  "backlight/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "vertical"
+  },
+
+  // Battery
+  "battery": {
+    "interval": 5,
+    "format": "{icon}",
+    "format-charging": "󱐋",
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "states": {
+      "warning": 30,
+      "critical": 20
+    },
+    "tooltip-format": "{timeTo}, {capacity}%"
+  },
+
+  // Clock
+  "clock": {
+    "interval": 1,
+    "format": "{:%H\n%M}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "on-click-right": "mode",
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-click-forward": "tz_up",
+      "on-click-backward": "tz_down",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
+    }
+  },
+
+  // Notification
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "󰂚",
+      "none": "󰂜",
+      "dnd-notification": "󰂛",
+      "dnd-none": "󰪑",
+      "inhibited-notification": "󰂛",
+      "inhibited-none": "󰪑",
+      "dnd-inhibited-notification": "󰂛",
+      "dnd-inhibited-none": "󰪑"
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+  "custom/wmname": {
+    "format": "",
+    "on-click": "rofi -show drun",
+    "tooltip": false
+  },
+
+  // Powermenu
+  "group/powermenu": {
+    "orientation": "vertical",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "powermenu-child",
+      "transition-left-to-right": false
+    },
+
+    "modules": [
+      "custom/power",
+      "custom/exit",
+      "custom/lock",
+      "custom/suspend",
+      "custom/reboot"
+    ]
+  },
+
+  "custom/power": {
+    "format": "⏻",
+    "on-click": "systemctl poweroff",
+    "tooltip": false
+  },
+
+  "custom/exit": {
+    "format": "󰈆",
+    "on-click": "loginctl terminate-user $USER",
+    "tooltip": false
+  },
+
+  "custom/lock": {
+    "format": "󰌾",
+    //     "on-click": "wlogout",
+    "tooltip": false
+  },
+
+  "custom/suspend": {
+    "format": "󰤄",
+    "on-click": "systemctl suspend",
+    "tooltip": false
+  },
+
+  "custom/reboot": {
+    "format": "󰜉",
+    "on-click": "systemctl reboot",
+    "tooltip": false
+  },
+
+  // Workspaces
+  "sway/workspaces": {
+    "all-outputs": true,
+    "active-only": false,
+    "sort-by-number": true,
+    "format": "{icon}",
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    }
+  },
+
+  // Systray
+  "tray": {
+    "icon-size": 19,
+    "spacing": 10
+  }
+}

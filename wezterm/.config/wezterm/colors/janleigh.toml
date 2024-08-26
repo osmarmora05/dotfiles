@@ -1,0 +1,61 @@
+[colors]
+background = "#0b0f10"  
+cursor_bg = "#c5c8c9"    
+cursor_border = "#c5c8c9"
+cursor_fg = "#121616"    
+foreground = "#c5c8c9"  
+selection_bg = "#35393a" 
+selection_fg = "#0b0f10"
+split = "#121616"        
+
+ansi = [
+    "#15191a",
+    "#ee6a70",
+    "#96d6b0",
+    "#ffb29b",
+    "#7ba5dd",
+    "#cb92f2",
+    "#7fc8db",
+    "#3d4142",
+]
+
+brights = [
+    "#121616",
+    "#e9454c",
+    "#76c998",
+    "#ff8c6a",
+    "#5a8ed4",
+    "#b768ed",
+    "#5ebad1",
+    "#35393a",
+]
+
+[colors.tab_bar]
+background = "#121616"
+
+[colors.tab_bar.active_tab]
+bg_color = "#0b0f10"
+fg_color = "#c5c8c9"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#121616"
+fg_color = "#c5c8c9"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#15191a"
+fg_color = "#c5c8c9"
+
+[colors.tab.inactive_tab_edge]
+bg_color = "#15191a"
+
+[colors.tab_bar.new_tab]
+bg_color = "#121616"
+fg_color = "#3d4142"
+
+[colors.tab.new_tab_hover]
+bg_color = "#15191a"
+fg_color = "#c5c8c9"
+
+[metadata]
+name = 'janleigh'
+origin_url = 'https://github.com/janleigh/dotfiles'

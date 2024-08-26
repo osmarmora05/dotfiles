@@ -1,0 +1,61 @@
+[colors]
+background = "#1A2026"  
+cursor_bg = "#FFFFFF"    
+cursor_border = "#FFFFFF"
+cursor_fg = "#1f272e"    
+foreground = "#FFFFFF"  
+selection_bg = "#4f5e6c" 
+selection_fg = "#1A2026"
+split = "#1f272e"        
+
+ansi = [
+    "#242D35",
+    "#FB6396",
+    "#94CF95",
+    "#F692B2",
+    "#6EC1D6",
+    "#CD84C8",
+    "#7FE4D2",
+    "#5a6b7b",
+]
+
+brights = [
+    "#1f272e",
+    "#f93a7a",
+    "#76c178",
+    "#f26693",
+    "#4fb4cd",
+    "#c167bb",
+    "#5cdcc5",
+    "#4f5e6c",
+]
+
+[colors.tab_bar]
+background = "#1f272e"
+
+[colors.tab_bar.active_tab]
+bg_color = "#1A2026"
+fg_color = "#FFFFFF"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#1f272e"
+fg_color = "#FFFFFF"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#242D35"
+fg_color = "#FFFFFF"
+
+[colors.tab.inactive_tab_edge]
+bg_color = "#242D35"
+
+[colors.tab_bar.new_tab]
+bg_color = "#1f272e"
+fg_color = "#5a6b7b"
+
+[colors.tab.new_tab_hover]
+bg_color = "#242D35"
+fg_color = "#FFFFFF"
+
+[metadata]
+name = 'amarena'
+origin_url = 'https://github.com/elenapan/dotfiles/blob/master/.xfiles/amarena'

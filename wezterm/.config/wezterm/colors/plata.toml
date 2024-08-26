@@ -1,0 +1,61 @@
+[colors]
+background = "#D2D2D2"  
+cursor_bg = "#1a1a1a"    
+cursor_border = "#1a1a1a"
+cursor_fg = "#9c9c9c"
+foreground = "#1a1a1a"  
+selection_bg = "#535353"
+selection_fg = "#d2d2d2"
+split = "#9c9c9c"        
+
+ansi = [
+    "#b2b2b2",
+    "#9d2f3f",
+    "#34a95d",
+    "#d99061",
+    "#5b6ec3",
+    "#b57dcc",
+    "#65c19f",
+    "#5f5f5f",
+]
+
+brights = [
+    "#9c9c9c",
+    "#8a2937",
+    "#2d9451",
+    "#d17a42",
+    "#4358b8",
+    "#a460c0",
+    "#4cb68f",
+    "#535353",
+]
+
+[colors.tab_bar]
+background = "#9c9c9c"
+
+[colors.tab_bar.active_tab]
+bg_color = "#d2d2d2"
+fg_color = "#1a1a1a"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#9c9c9c"
+fg_color = "#1a1a1a"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#b2b2b2"
+fg_color = "#1a1a1a"
+
+[colors.tab.inactive_tab_edge]
+bg_color = "#b2b2b2"
+
+[colors.tab_bar.new_tab]
+bg_color = "#9c9c9c"
+fg_color = "#5f5f5f"
+
+[colors.tab.new_tab_hover]
+bg_color = "#b2b2b2"
+fg_color = "#1a1a1a"
+
+[metadata]
+name = 'plata'
+origin_url = 'https://github.com/gwynsav'

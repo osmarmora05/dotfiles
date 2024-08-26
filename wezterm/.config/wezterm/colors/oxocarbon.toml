@@ -1,0 +1,61 @@
+[colors]
+background = "#171717"  
+cursor_bg = "#dcdcdc"    
+cursor_border = "#dcdcdc"
+cursor_fg = "#282828"    
+foreground = "#dcdcdc"  
+selection_bg = "#28344a" 
+selection_fg = "#82cfff"
+split = "#282828"        
+
+ansi = [
+    "#282828",
+    "#ff7eb6",
+    "#78a9ff",
+    "#be95ff",
+    "#82cfff",
+    "#42be56",
+    "#3ddbd9",
+    "#565656",
+]
+
+brights = [
+    "#252525",
+    "#df5b93",
+    "#53cb8d",
+    "#d9845e",
+    "#618dd9",
+    "#a27ae1",
+    "#1eb1af",
+    "#bdc3c2",
+]
+
+[colors.tab_bar]
+background = "#252525"
+
+[colors.tab_bar.active_tab]
+bg_color = "#171717"
+fg_color = "#dcdcdc"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#252525"
+fg_color = "#dcdcdc"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#282828"
+fg_color = "#dcdcdc"
+
+[colors.tab.inactive_tab_edge]
+bg_color = "#282828"
+
+[colors.tab_bar.new_tab]
+bg_color = "#252525"
+fg_color = "#565656"
+
+[colors.tab.new_tab_hover]
+bg_color = "#282828"
+fg_color = "#dcdcdc"
+
+[metadata]
+name = 'Oxocarbon'
+origin_url = 'https://github.com/nyoom-engineering/base16-oxocarbon'

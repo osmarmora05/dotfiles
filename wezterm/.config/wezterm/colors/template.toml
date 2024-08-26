@@ -1,0 +1,61 @@
+[colors]
+background = "#background"  
+cursor_bg = "#foreground"    
+cursor_border = "#foreground"
+cursor_fg = "#color8"    
+foreground = "#foreground"  
+selection_bg = "#color15" 
+selection_fg = "#background"
+split = "#color8"        
+
+ansi = [
+    "#color0",
+    "#color1",
+    "#color2",
+    "#color3",
+    "#color4",
+    "#color5",
+    "#color6",
+    "#color7",
+]
+
+brights = [
+    "#color8",
+    "#color9",
+    "#color10",
+    "#color11",
+    "#color12",
+    "#color13",
+    "#color14",
+    "#color15",
+]
+
+[colors.tab_bar]
+background = "#color8"
+
+[colors.tab_bar.active_tab]
+bg_color = "#background"
+fg_color = "#foreground"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#color8"
+fg_color = "#foreground"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#color0"
+fg_color = "#foreground"
+
+[colors.tab.inactive_tab_edge]
+bg_color = "#color0"
+
+[colors.tab_bar.new_tab]
+bg_color = "#color8"
+fg_color = "#color7"
+
+[colors.tab.new_tab_hover]
+bg_color = "#color0"
+fg_color = "#foreground"
+
+[metadata]
+name = 'Name'
+origin_url = 'Url'

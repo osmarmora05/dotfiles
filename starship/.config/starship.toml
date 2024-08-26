@@ -1,0 +1,74 @@
+add_newline = false
+
+[line_break]
+disabled = false
+
+[git_branch]
+style = "purple"
+symbol = " "
+
+[character]
+success_symbol = "[󰊠 ](bold green)"
+error_symbol = "[󰊠 ](bold red)"
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[shlvl]
+symbol = " "
+
+[swift]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
+
+[nix_shell]
+symbol = " "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[python]
+symbol = " "
+
+[docker_context]
+symbol = " "
+
+[git_status]
+conflicted = "="
+ahead = "⇡"
+behind = "⇣"
+untracked = "?"
+stashed = ""
+modified = "!"
+staged = "+"
+renamed = "»"
+deleted = ""

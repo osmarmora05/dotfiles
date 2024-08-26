@@ -1,0 +1,9 @@
+[submodule "awesome/.config/awesome/modules/rubato"]
+	path = awesome/.config/awesome/modules/rubato
+	url = https://github.com/andOrlando/rubato
+[submodule "awesome/.config/awesome/modules/color"]
+	path = awesome/.config/awesome/modules/color
+	url = https://github.com/andOrlando/color
+[submodule "awesome/.config/awesome/modules/awesome-battery_widget"]
+	path = awesome/.config/awesome/modules/awesome-battery_widget
+	url = https://github.com/Aire-One/awesome-battery_widget
