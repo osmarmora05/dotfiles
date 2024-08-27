@@ -151,6 +151,16 @@ bar {
     swaybar_command waybar
 }
 
+### ~~~Rules~~~
+
+for_window [app_id="org.gnome.Nautilus"] floating enable
+for_window [app_id="org.gnome.Calculator"] floating enable
+for_window [app_id="org.gnome.Loupe"] floating enable
+for_window [app_id="org.gnome.Calendar"] floating enable
+for_window [app_id="org.gnome.Weather"] floating enable
+for_window [app_id="org.gnome.TextEditor"] floating enable
+for_window [app_id="com.github.finefindus.eyedropper"] floating enable
+
 ###~~~Decoration~~~
 
 gaps inner 10
