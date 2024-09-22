@@ -211,6 +211,10 @@ function install_media_codecs() {
   fi
 }
 
+function upgrade_system() {
+  sudo dnf upgrade
+}
+
 # Responsibility: Show the main menu of the script
 # 1. The function requires the `question` and the `action` as arguments
 # 2. In a loop we execute the user's response, if it is the `y` or `n` options, then it runs its corresponding function and breaks the loop
@@ -252,5 +256,6 @@ show_menu_and_execute_action "Do you want to add DNF configuration?" DNF_configu
 show_menu_and_execute_action "Do you want to enable RPM Fusion?" enable_RPM_function
 show_menu_and_execute_action "Do you want to enable Flatpak?" enable_flatpak
 show_menu_and_execute_action "Do you want to install Media Codecs?" install_media_codecs
+show_menu_and_execute_action "You want to upgrade the system?" upgrade_system
 
 echo "Bay!"
