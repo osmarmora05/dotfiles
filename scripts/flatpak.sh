@@ -43,6 +43,7 @@ flatpak_apps=(
   'org.gnome.design.Palette'
   'org.gnome.design.Typography'
   'org.kde.umbrello'
+  'com.librumreader.librum'
 )
 
 # Color Variables
