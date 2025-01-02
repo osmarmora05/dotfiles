@@ -33,6 +33,9 @@
 
 Clone this repository
 
+> [!note]
+> Add the `--recursive` flag to download AwesomeWM modules 
+
 ```shell
-git clone https://github.com/osmarmora05/dotfiles-stow.git --recursive
+git clone https://github.com/osmarmora05/dotfiles.git
 ```
