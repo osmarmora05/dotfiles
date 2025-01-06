@@ -1,19 +1,17 @@
 #!/bin/bash
 
 : '
-
 Autor: osmarmora05
 https://github.com/osmarmora05/dotfiles
 
 Warning: Do not take this script as a reference, I do very noob things and many bad practices, my goal is for the script to work :v
 
 References
-https://github.com/smittix/fedorable/blob/main/fedorab le.sh
+https://github.com/smittix/fedorable/blob/main/fedorable.sh
 https://github.com/gh0stzk/dotfiles/blob/master/RiceInstaller
-
+https://github.com/devangshekhawat/Fedora-41-Post-Install-Guide
 
 This script is based on: https://www.youtube.com/watch?v=RrRpXs2pkzg
-
 '
 
 # Color globals
@@ -133,7 +131,7 @@ function enable_RPM_function() {
   local rpmfusion_free_url=https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-${fedora_version}.noarch.rpm
   local rpmfusion_nonfree_url=https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-${fedora_version}.noarch.rpm
   local rpm_fusion_command="sudo dnf install "$rpmfusion_free_url" "$rpmfusion_nonfree_url""
-  local appstream_metadate_command="sudo dnf groupupdate core"
+  local appstream_metadata_command="sudo dnf group upgrade core"
 
   $rpm_fusion_command
 
@@ -146,14 +144,14 @@ function enable_RPM_function() {
     show_error_with_url "https://rpmfusion.org/Configuration"
   fi
 
-  $appstream_metadate_command
+  $appstream_metadata_command
 
   if [ $? -eq 0 ]; then
     echo ""
     show_succes "AppStream metadata has been successfully updated!"
     echo ""
   else
-    show_error "Oh, wow! It appears that the AppStream metadata update has been cancelled. Command executed: $appstream_metadate_command"
+    show_error "Oh, wow! It appears that the AppStream metadata update has been cancelled. Command executed: $appstream_metadata_command"
     show_error_with_url "https://rpmfusion.org/Configuration"
   fi
 }
@@ -185,8 +183,8 @@ function enable_flatpak() {
 
 function install_media_codecs() {
 
-  local groupupdate_multimedia_command="sudo dnf groupupdate multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin"
-  local groupupdate_sound_and_video_command="sudo dnf groupupdate sound-and-video"
+  local groupupdate_multimedia_command="sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin"
+  local groupupdate_sound_and_video_command="sudo dnf -v group install 'Sound and Video'"
 
   $groupupdate_multimedia_command
 
