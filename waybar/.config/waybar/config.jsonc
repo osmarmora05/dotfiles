@@ -180,32 +180,37 @@
 
   "custom/power": {
     "format": "⏻",
-    "on-click": "systemctl poweroff",
-    "tooltip": false
+    "on-click": "swaynag -t warning -m 'You have pressed the shortcut for poweroff. Do you really want to reboot?' -B 'Yes, poweroff' 'systemctl poweroff'",
+    "tooltip-format": "Poweroff",
+    "tooltip": true
   },
 
   "custom/exit": {
     "format": "󰈆",
-    "on-click": "loginctl terminate-user $USER",
-    "tooltip": false
+    "on-click": "swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'",
+    "tooltip-format": "Exit",
+    "tooltip": true
   },
 
   "custom/lock": {
     "format": "󰌾",
     //     "on-click": "wlogout",
-    "tooltip": false
+    "tooltip-format": "Lock",
+    "tooltip": true
   },
 
   "custom/suspend": {
     "format": "󰤄",
-    "on-click": "systemctl suspend",
-    "tooltip": false
+    "on-click": "swaynag -t warning -m 'You have pressed the shortcut for suspend. Do you really want to suspend?' -B 'Yes, suspend' 'systemctl suspend'",
+    "tooltip-format": "Suspend",
+    "tooltip": true
   },
 
   "custom/reboot": {
     "format": "󰜉",
-    "on-click": "systemctl reboot",
-    "tooltip": false
+    "on-click": "swaynag -t warning -m 'You have pressed the shortcut for reboot. Do you really want to reboot?' -B 'Yes, reboot' 'systemctl reboot'",
+    "tooltip-format": "Reboot",
+    "tooltip": true
   },
 
   // Workspaces
