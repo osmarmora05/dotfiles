@@ -69,7 +69,7 @@ sudo dnf install ninja-build meson mesa-libGLES-devel pango pango-devel
 Install my configuration files
 
 ```shell
-stow sway swaylock waybar wlogout rofi
+stow sway swaylock waybar wlogout rofi swaync
 ```
 
 <p align="center">
