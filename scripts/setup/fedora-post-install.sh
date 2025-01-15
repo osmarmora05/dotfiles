@@ -177,14 +177,14 @@ function enable_flatpak() {
 }
 
 # Responsibility: Enable/install the media codes https://rpmfusion.org/Howto/Multimedia
-#1. Run the `groupupdate_multimedia_command` and `groupupdate_sound_and_video_command` commands
+# 1. Run the `groupupdate_multimedia_command` and `groupupdate_sound_and_video_command` commands
 # 2. We check that the command has been executed correctly
 #~~~~~~~~~~~~~~
 
 function install_media_codecs() {
 
   local groupupdate_multimedia_command="sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin"
-  local groupupdate_sound_and_video_command="sudo dnf -v group install 'Sound and Video'"
+  local groupupdate_sound_and_video_command="sudo dnf group install 'Sound and Video'"
 
   $groupupdate_multimedia_command
 
