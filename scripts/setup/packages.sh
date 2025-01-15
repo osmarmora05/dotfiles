@@ -11,6 +11,8 @@ pkgs=(
     neovim
     kitty
     "curl -fsS https://dl.brave.com/install.sh | sh"
+    https://github.com/duplicati/duplicati/releases/download/v2.1.0.106_canary_2025-01-11/duplicati-2.1.0.106_canary_2025-01-11-linux-x64-gui.rpm
+    keepassxc
     
     # Utilities
     fd-find
