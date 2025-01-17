@@ -79,6 +79,13 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3  "['<Super>
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4  "['<Super>4']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5  "['<Super>5']"
 
+echo "- org.gnome.settings-daemon.plugins.media-keys.custom-keybindings.custom0..."
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding
+'<Super>Return'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command
+ 'wezterm'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name 'term'
+
 echo "- Creating folders: ~/Dev ~/Vault ~/Imágenes/Screenshots"
 mkdir -p $HOME/Dev $HOME/Vault $HOME/Imágenes/Screenshots
 
