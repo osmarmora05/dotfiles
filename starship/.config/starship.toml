@@ -77,7 +77,7 @@ symbol = " "
 [python]
 format = "py [$symbol$version]($style) "
 version_format = "$major.$minor"
-symbol = " "
+symbol = "∿ "
 
 [docker_context]
 symbol = " "
