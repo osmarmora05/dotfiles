@@ -47,7 +47,7 @@
 
 /*Amarena*/
 
-@define-color colbg     #1A2026; 
+/* @define-color colbg     #1A2026; 
 @define-color colbg2    #222a32;
 @define-color colfg     #FFFFFF;
 @define-color colgrey   #4f5e6c;
@@ -58,7 +58,7 @@
 @define-color colviolet #6EC1D6;
 @define-color colred    #FB6396;
 @define-color colyellow #F692B2; 
-@define-color border rgba(255, 255, 255, 0.1);
+@define-color border rgba(255, 255, 255, 0.1); */
 
 /*Oxocarbon*/
 
@@ -89,6 +89,21 @@
 @define-color colred       #ff5370;
 @define-color colyellow    #ffcb6b;
 @define-color border rgba(255, 255, 255, 0.1);*/
+
+/*Sexy*/
+
+@define-color colbg        #1D1F21; 
+@define-color colbg2       #282A2E;
+@define-color colfg        #C5C8C6;
+@define-color colgrey      #494e56;
+@define-color colcyan      #8ABEB7;
+@define-color colgreen     #B5BD68;
+@define-color colorange    #f78c6c;
+@define-color colmagenta   #B294BB;
+@define-color colviolet    #81A2BE;
+@define-color colred       #CC6666;
+@define-color colyellow    #F0C674;
+@define-color border rgba(255, 255, 255, 0.1);
 
 * {
   border: 10px;
