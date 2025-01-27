@@ -102,6 +102,7 @@
       "warning": 30,
       "critical": 20
     },
+    "format-plugged": "󰚥",
     "tooltip-format": "{timeTo}, {capacity}%"
   },
 
