@@ -60,7 +60,7 @@
 
 /* Amarena */
 
-@define-color background           #1A2026; 
+/* @define-color background           #1A2026; 
 @define-color background-alt       #222a32;
 @define-color white                #FFFFFF;
 @define-color gray                 #4f5e6c;
@@ -71,7 +71,7 @@
 @define-color violet               #6EC1D6;
 @define-color red                  #FB6396;
 @define-color yellow               #F692B2; 
-@define-color border               rgba(255, 255, 255, 0.1);
+@define-color border               rgba(255, 255, 255, 0.1); */
 
 /* Oxocarbon */
 
@@ -103,6 +103,19 @@
 @define-color yellow               #ffcb6b;
 @define-color border               rgba(255, 255, 255, 0.1); */
 
+/*Sexy*/
+
+@define-color background        #1D1F21; 
+@define-color background-alt     #282A2E;
+@define-color white        #C5C8C6;
+@define-color gray      #494e56;
+@define-color green     #B5BD68;
+@define-color orange    #f78c6c;
+@define-color magenta   #B294BB;
+@define-color blue    #81A2BE;
+@define-color red       #CC6666;
+@define-color yellow    #F0C674;
+@define-color border rgba(255, 255, 255, 0.1);
 
 * {
   all: unset;
