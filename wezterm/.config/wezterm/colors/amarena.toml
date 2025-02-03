@@ -6,7 +6,7 @@ cursor_fg = "#1f272e"
 foreground = "#FFFFFF"  
 selection_bg = "#4f5e6c" 
 selection_fg = "#1A2026"
-split = "#1f272e"        
+split = "#28344a"        
 
 ansi = [
     "#242D35",
@@ -27,7 +27,7 @@ brights = [
     "#4fb4cd",
     "#c167bb",
     "#5cdcc5",
-    "#4f5e6c",
+    "#7e96ac",
 ]
 
 [colors.tab_bar]
