@@ -28,13 +28,15 @@ local themes = {
     ['default'] = 'default',
     ['fullerene'] = 'fullerene',
     ['biscuit'] = 'biscuit',
-    ['oxocarbon'] = 'oxocarbon'
+    ['oxocarbon'] = 'oxocarbon',
+    ['Carburator'] = 'Carburator',
+    ['aphelion'] = 'aphelion'
 }
 
 return {
 
     -- Color Scheme
-    color_scheme                =  themes['dark-decay'],
+    color_scheme                 = themes['aphelion'],
 
     color_schemes                = {
         ['Builtin Solarized Dark'] = {
@@ -67,7 +69,7 @@ return {
         bottom = '24pt',
         top = '24pt'
     },
-    window_background_opacity    = 0.85,
+    window_background_opacity    = 0.95,
 
     -- Tabbar
     enable_tab_bar               = true,
@@ -84,7 +86,7 @@ return {
 
     -- Miscelaunus
     default_cursor_style         = 'SteadyBar',
-    enable_wayland = false,
+    enable_wayland               = false,
 
     --Keybinds
     keys                         = require('keys'),

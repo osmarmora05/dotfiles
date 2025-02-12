@@ -1,0 +1,61 @@
+[colors]
+background = "#101319"
+cursor_bg = "#f4f3ee"
+cursor_border = "#f4f3ee"
+cursor_fg = "#3A435A"
+foreground = "#f4f3ee"
+selection_bg = "#DDDBCF"
+selection_fg = "#101319"
+split = "#3A435A"
+
+ansi = [
+    "#171b24",
+    "#E34F4F",
+    "#69bfce",
+    "#e37e4f",
+    "#5679E3",
+    "#956dca",
+    "#5599E2",
+    "#f4f3ee",
+]
+
+brights = [
+    "#3A435A",
+    "#DE2B2B",
+    "#56B7C8",
+    "#DE642B",
+    "#3E66E0",
+    "#885AC4",
+    "#3F8CDE",
+    "#DDDBCF",
+]
+
+[colors.tab_bar]
+background = "#3A435A"
+
+[colors.tab_bar.active_tab]
+bg_color = "#101319"
+fg_color = "#f4f3ee"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#3A435A"
+fg_color = "#f4f3ee"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#171b24"
+fg_color = "#f4f3ee"
+
+[colors.tab.inactive_tab_edge]
+bg_color = "#171b24"
+
+[colors.tab_bar.new_tab]
+bg_color = "#3A435A"
+fg_color = "#f4f3ee"
+
+[colors.tab.new_tab_hover]
+bg_color = "#171b24"
+fg_color = "#f4f3ee"
+
+[metadata]
+name = 'aphelion'
+origin_url = 'https://github.com/elenapan/dotfiles/blob/master/config/colorschemes/aphelion'
