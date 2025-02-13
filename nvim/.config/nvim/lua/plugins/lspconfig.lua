@@ -6,4 +6,9 @@ return {
   --     pyright = {},
   --   },
   -- },
+  opts = {
+    servers = {
+      cssls = {},
+    },
+  },
 }
