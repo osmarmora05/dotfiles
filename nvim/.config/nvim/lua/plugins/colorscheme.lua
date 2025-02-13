@@ -2,6 +2,7 @@ return {
   {
     "rebelot/kanagawa.nvim",
     config = function()
+      -- Default options:
       require("kanagawa").setup({
         compile = false, -- enable compiling the colorscheme
         undercurl = true, -- enable undercurls
@@ -29,9 +30,24 @@ return {
     end,
   },
   {
+    "Mofiqul/adwaita.nvim",
+    config = function()
+      vim.g.adwaita_transparent = true
+    end,
+  },
+  {
+    "navarasu/onedark.nvim",
+    config = function()
+      require("onedark").setup({
+        style = "darker",
+        transparent = true,
+      })
+    end,
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa-wave",
+      colorscheme = "adwaita",
     },
   },
 }
