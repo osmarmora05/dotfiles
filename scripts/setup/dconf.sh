@@ -6,6 +6,7 @@ extension=(
     https://extensions.gnome.org/extension/19/user-themes/
     https://extensions.gnome.org/extension/3396/color-picker/
     https://extensions.gnome.org/extension/1319/gsconnect/
+    https://extensions.gnome.org/extension/4470/media-controls/
 )
 
 if [ "$(id -u)" = 0 ]; then
