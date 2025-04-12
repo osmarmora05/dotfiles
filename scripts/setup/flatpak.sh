@@ -1,7 +1,6 @@
 #!/bin/bash
 
 flatpak_apps=(
-  'app.drey.Dialect'
   'com.discordapp.Discord'
   'com.github.finefindus.eyedropper'
   'com.github.zocker_160.SyncThingy'
@@ -13,7 +12,6 @@ flatpak_apps=(
   'org.gnome.design.IconLibraryv'
   'org.kde.umbrello'
   'com.librumreader.librum'
-  'org.keepassxc.KeePassXC'
   'net.christianbeier.Gromit-MPX'
 )
 
