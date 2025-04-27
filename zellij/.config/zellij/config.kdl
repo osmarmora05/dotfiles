@@ -266,636 +266,81 @@ keybinds clear-defaults=true {
         bind "esc" { UndoRenamePane; SwitchToMode "pane"; }
     }
 }
+
 themes {
-    everforest {
-        text_unselected {
-            base 141 144 141
-            background 26 26 26
-            emphasis_0 230 152 117
-            emphasis_1 131 192 146
-            emphasis_2 167 192 128
-            emphasis_3 214 153 182
-        }
-        text_selected {
-            base 141 144 141
-            background 40 40 40
-            emphasis_0 230 152 117
-            emphasis_1 131 192 146
-            emphasis_2 167 192 128
-            emphasis_3 214 153 182
-        }
-        ribbon_selected {
-            base 26 26 26
-            background 167 192 128
-            emphasis_0 230 126 128
-            emphasis_1 230 152 117
-            emphasis_2 214 153 182
-            emphasis_3 127 187 179
-        }
-        ribbon_unselected {
-            base 26 26 26
-            background 211 198 170
-            emphasis_0 230 126 128
-            emphasis_1 141 144 141
-            emphasis_2 127 187 179
-            emphasis_3 214 153 182
-        }
-        table_title {
-            base 167 192 128
-            background 0
-            emphasis_0 230 152 117
-            emphasis_1 131 192 146
-            emphasis_2 167 192 128
-            emphasis_3 214 153 182
-        }
-        table_cell_selected {
-            base 141 144 141
-            background 40 40 40
-            emphasis_0 230 152 117
-            emphasis_1 131 192 146
-            emphasis_2 167 192 128
-            emphasis_3 214 153 182
-        }
-        table_cell_unselected {
-            base 141 144 141
-            background 26 26 26
-            emphasis_0 230 152 117
-            emphasis_1 131 192 146
-            emphasis_2 167 192 128
-            emphasis_3 214 153 182
-        }
-        list_selected {
-            base 141 144 141
-            background 40 40 40
-            emphasis_0 230 152 117
-            emphasis_1 131 192 146
-            emphasis_2 167 192 128
-            emphasis_3 214 153 182
-        }
-        list_unselected {
-            base 141 144 141
-            background 26 26 26
-            emphasis_0 230 152 117
-            emphasis_1 131 192 146
-            emphasis_2 167 192 128
-            emphasis_3 214 153 182
-        }
-        frame_selected {
-            base 167 192 128
-            background 0
-            emphasis_0 230 152 117
-            emphasis_1 131 192 146
-            emphasis_2 214 153 182
-            emphasis_3 0
-        }
-        frame_highlight {
-            base 230 152 117
-            background 0
-            emphasis_0 230 152 117
-            emphasis_1 230 152 117
-            emphasis_2 230 152 117
-            emphasis_3 230 152 117
-        }
-        exit_code_success {
-            base 167 192 128
-            background 0
-            emphasis_0 131 192 146
-            emphasis_1 26 26 26
-            emphasis_2 214 153 182
-            emphasis_3 127 187 179
-        }
-        exit_code_error {
-            base 230 126 128
-            background 0
-            emphasis_0 219 188 127
-            emphasis_1 0
-            emphasis_2 0
-            emphasis_3 0
-        }
-        multiplayer_user_colors {
-            player_1 214 153 182
-            player_2 127 187 179
-            player_3 0
-            player_4 219 188 127
-            player_5 131 192 146
-            player_6 0
-            player_7 230 126 128
-            player_8 0
-            player_9 0
-            player_10 0
-        }
-    }
     kanagawa_dragon {
-        text_unselected {
-            base 141 144 157
-            background 26 26 26
-            emphasis_0 255 184 108
-            emphasis_1 139 233 253
-            emphasis_2 114 143 102
-            emphasis_3 139 164 176
-        }
-        text_selected {
-            base 141 144 157
-            background 40 40 40
-            emphasis_0 255 184 108
-            emphasis_1 139 233 253
-            emphasis_2 114 143 102
-            emphasis_3 139 164 176
-        }
-        ribbon_selected {
-            base 26 26 26
-            background 114 143 102
-            emphasis_0 195 64 67
-            emphasis_1 255 184 108
-            emphasis_2 139 164 176
-            emphasis_3 139 164 176
-        }
-        ribbon_unselected {
-            base 26 26 26
-            background 220 220 204
-            emphasis_0 195 64 67
-            emphasis_1 141 144 157
-            emphasis_2 139 164 176
-            emphasis_3 139 164 176
-        }
-        table_title {
-            base 114 143 102
-            background 0
-            emphasis_0 255 184 108
-            emphasis_1 139 233 253
-            emphasis_2 114 143 102
-            emphasis_3 139 164 176
-        }
-        table_cell_selected {
-            base 141 144 157
-            background 40 40 40
-            emphasis_0 255 184 108
-            emphasis_1 139 233 253
-            emphasis_2 114 143 102
-            emphasis_3 139 164 176
-        }
-        table_cell_unselected {
-            base 141 144 157
-            background 26 26 26
-            emphasis_0 255 184 108
-            emphasis_1 139 233 253
-            emphasis_2 114 143 102
-            emphasis_3 139 164 176
-        }
-        list_selected {
-            base 141 144 157
-            background 40 40 40
-            emphasis_0 255 184 108
-            emphasis_1 139 233 253
-            emphasis_2 114 143 102
-            emphasis_3 139 164 176
-        }
-        list_unselected {
-            base 141 144 157
-            background 26 26 26
-            emphasis_0 255 184 108
-            emphasis_1 139 233 253
-            emphasis_2 114 143 102
-            emphasis_3 139 164 176
-        }
-        frame_selected {
-            base 114 143 102
-            background 0
-            emphasis_0 255 184 108
-            emphasis_1 139 233 253
-            emphasis_2 139 164 176
-            emphasis_3 0
-        }
-        frame_highlight {
-            base 255 184 108
-            background 0
-            emphasis_0 255 184 108
-            emphasis_1 255 184 108
-            emphasis_2 255 184 108
-            emphasis_3 255 184 108
-        }
-        exit_code_success {
-            base 114 143 102
-            background 0
-            emphasis_0 139 233 253
-            emphasis_1 26 26 26
-            emphasis_2 139 164 176
-            emphasis_3 139 164 176
-        }
-        exit_code_error {
-            base 195 64 67
-            background 0
-            emphasis_0 157 143 111
-            emphasis_1 0
-            emphasis_2 0
-            emphasis_3 0
-        }
-        multiplayer_user_colors {
-            player_1 139 164 176
-            player_2 139 164 176
-            player_3 0
-            player_4 157 143 111
-            player_5 139 233 253
-            player_6 0
-            player_7 195 64 67
-            player_8 0
-            player_9 0
-            player_10 0
-        }
+        fg "#dcdccc"
+        bg "#282828"
+        red "#C34043"
+        green "#728F66"
+        yellow "#9D8F6F"
+        blue "#8BA4B0"
+        magenta "#8BA4B0"
+        cyan "#8be9fd"
+        orange "#ffb86c"
+        black "#1a1a1a"
+        white "#8D909D"
+    } 
+
+    everforest {
+        fg "#d3c6aa"
+        bg "#282828"
+        red "#e67e80"
+        green "#a7c080"
+        yellow "#dbbc7f"
+        blue "#7fbbb3"
+        magenta "#d699b6"
+        cyan "#83c092"
+        orange "#e69875"
+        black "#1a1a1a"
+        white "#8D908D"
     }
-    oldWorld {
-        text_unselected {
-            base 201 199 205
-            background 0 0 0
-            emphasis_0 245 161 145
-            emphasis_1 133 181 186
-            emphasis_2 144 185 159
-            emphasis_3 146 162 213
-        }
-        text_selected {
-            base 201 199 205
-            background 0 0 0
-            emphasis_0 245 161 145
-            emphasis_1 133 181 186
-            emphasis_2 144 185 159
-            emphasis_3 146 162 213
-        }
-        ribbon_selected {
-            base 0 0 0
-            background 144 185 159
-            emphasis_0 234 131 165
-            emphasis_1 245 161 145
-            emphasis_2 146 162 213
-            emphasis_3 133 181 186
-        }
-        ribbon_unselected {
-            base 0 0 0
-            background 201 199 205
-            emphasis_0 234 131 165
-            emphasis_1 201 199 205
-            emphasis_2 133 181 186
-            emphasis_3 146 162 213
-        }
-        table_title {
-            base 144 185 159
-            background 0
-            emphasis_0 245 161 145
-            emphasis_1 133 181 186
-            emphasis_2 144 185 159
-            emphasis_3 146 162 213
-        }
-        table_cell_selected {
-            base 201 199 205
-            background 0 0 0
-            emphasis_0 245 161 145
-            emphasis_1 133 181 186
-            emphasis_2 144 185 159
-            emphasis_3 146 162 213
-        }
-        table_cell_unselected {
-            base 201 199 205
-            background 0 0 0
-            emphasis_0 245 161 145
-            emphasis_1 133 181 186
-            emphasis_2 144 185 159
-            emphasis_3 146 162 213
-        }
-        list_selected {
-            base 201 199 205
-            background 0 0 0
-            emphasis_0 245 161 145
-            emphasis_1 133 181 186
-            emphasis_2 144 185 159
-            emphasis_3 146 162 213
-        }
-        list_unselected {
-            base 201 199 205
-            background 0 0 0
-            emphasis_0 245 161 145
-            emphasis_1 133 181 186
-            emphasis_2 144 185 159
-            emphasis_3 146 162 213
-        }
-        frame_selected {
-            base 144 185 159
-            background 0
-            emphasis_0 245 161 145
-            emphasis_1 133 181 186
-            emphasis_2 146 162 213
-            emphasis_3 0
-        }
-        frame_highlight {
-            base 245 161 145
-            background 0
-            emphasis_0 245 161 145
-            emphasis_1 245 161 145
-            emphasis_2 245 161 145
-            emphasis_3 245 161 145
-        }
-        exit_code_success {
-            base 144 185 159
-            background 0
-            emphasis_0 133 181 186
-            emphasis_1 0 0 0
-            emphasis_2 146 162 213
-            emphasis_3 133 181 186
-        }
-        exit_code_error {
-            base 234 131 165
-            background 0
-            emphasis_0 230 185 157
-            emphasis_1 0
-            emphasis_2 0
-            emphasis_3 0
-        }
-        multiplayer_user_colors {
-            player_1 146 162 213
-            player_2 133 181 186
-            player_3 0
-            player_4 230 185 157
-            player_5 133 181 186
-            player_6 0
-            player_7 234 131 165
-            player_8 0
-            player_9 0
-            player_10 0
-        }
-    }
+
     rose_pine_moon {
-        text_unselected {
-            base 224 222 244
-            background 25 23 36
-            emphasis_0 246 193 119
-            emphasis_1 156 207 216
-            emphasis_2 49 116 143
-            emphasis_3 196 167 231
-        }
-        text_selected {
-            base 224 222 244
-            background 25 23 36
-            emphasis_0 246 193 119
-            emphasis_1 156 207 216
-            emphasis_2 49 116 143
-            emphasis_3 196 167 231
-        }
-        ribbon_selected {
-            base 25 23 36
-            background 49 116 143
-            emphasis_0 235 111 146
-            emphasis_1 246 193 119
-            emphasis_2 196 167 231
-            emphasis_3 156 207 216
-        }
-        ribbon_unselected {
-            base 25 23 36
-            background 224 222 244
-            emphasis_0 235 111 146
-            emphasis_1 224 222 244
-            emphasis_2 156 207 216
-            emphasis_3 196 167 231
-        }
-        table_title {
-            base 49 116 143
-            background 0
-            emphasis_0 246 193 119
-            emphasis_1 156 207 216
-            emphasis_2 49 116 143
-            emphasis_3 196 167 231
-        }
-        table_cell_selected {
-            base 224 222 244
-            background 25 23 36
-            emphasis_0 246 193 119
-            emphasis_1 156 207 216
-            emphasis_2 49 116 143
-            emphasis_3 196 167 231
-        }
-        table_cell_unselected {
-            base 224 222 244
-            background 25 23 36
-            emphasis_0 246 193 119
-            emphasis_1 156 207 216
-            emphasis_2 49 116 143
-            emphasis_3 196 167 231
-        }
-        list_selected {
-            base 224 222 244
-            background 25 23 36
-            emphasis_0 246 193 119
-            emphasis_1 156 207 216
-            emphasis_2 49 116 143
-            emphasis_3 196 167 231
-        }
-        list_unselected {
-            base 224 222 244
-            background 25 23 36
-            emphasis_0 246 193 119
-            emphasis_1 156 207 216
-            emphasis_2 49 116 143
-            emphasis_3 196 167 231
-        }
-        frame_selected {
-            base 49 116 143
-            background 0
-            emphasis_0 246 193 119
-            emphasis_1 156 207 216
-            emphasis_2 196 167 231
-            emphasis_3 0
-        }
-        frame_highlight {
-            base 246 193 119
-            background 0
-            emphasis_0 246 193 119
-            emphasis_1 246 193 119
-            emphasis_2 246 193 119
-            emphasis_3 246 193 119
-        }
-        exit_code_success {
-            base 49 116 143
-            background 0
-            emphasis_0 156 207 216
-            emphasis_1 25 23 36
-            emphasis_2 196 167 231
-            emphasis_3 156 207 216
-        }
-        exit_code_error {
-            base 235 111 146
-            background 0
-            emphasis_0 246 193 119
-            emphasis_1 0
-            emphasis_2 0
-            emphasis_3 0
-        }
-        multiplayer_user_colors {
-            player_1 196 167 231
-            player_2 156 207 216
-            player_3 0
-            player_4 246 193 119
-            player_5 156 207 216
-            player_6 0
-            player_7 235 111 146
-            player_8 0
-            player_9 0
-            player_10 0
-        }
+        fg "#e0def4"        // light text
+        bg "#191724"        // dark background
+        red "#eb6f92"       // refined pink
+        green "#31748f"     // soft teal
+        yellow "#f6c177"    // soft yellow
+        blue "#9ccfd8"      // sky blue
+        magenta "#c4a7e7"   // soft purple
+        cyan "#9ccfd8"      // same as sky blue for consistency
+        orange "#f6c177"    // same as soft yellow
+        black "#191724"     // darker background (almost black)
+        white "#e0def4"     // same as light text
     }
+
     sakura {
-        text_unselected {
-            base 197 163 169
-            background 28 26 28
-            emphasis_0 158 151 208
-            emphasis_1 135 143 185
-            emphasis_2 135 143 185
-            emphasis_3 158 151 208
-        }
-        text_selected {
-            base 197 163 169
-            background 28 26 28
-            emphasis_0 158 151 208
-            emphasis_1 135 143 185
-            emphasis_2 135 143 185
-            emphasis_3 158 151 208
-        }
-        ribbon_selected {
-            base 28 26 28
-            background 135 143 185
-            emphasis_0 43 23 32
-            emphasis_1 158 151 208
-            emphasis_2 158 151 208
-            emphasis_3 135 143 185
-        }
-        ribbon_unselected {
-            base 28 26 28
-            background 197 163 169
-            emphasis_0 43 23 32
-            emphasis_1 197 163 169
-            emphasis_2 135 143 185
-            emphasis_3 158 151 208
-        }
-        table_title {
-            base 135 143 185
-            background 0
-            emphasis_0 158 151 208
-            emphasis_1 135 143 185
-            emphasis_2 135 143 185
-            emphasis_3 158 151 208
-        }
-        table_cell_selected {
-            base 197 163 169
-            background 28 26 28
-            emphasis_0 158 151 208
-            emphasis_1 135 143 185
-            emphasis_2 135 143 185
-            emphasis_3 158 151 208
-        }
-        table_cell_unselected {
-            base 197 163 169
-            background 28 26 28
-            emphasis_0 158 151 208
-            emphasis_1 135 143 185
-            emphasis_2 135 143 185
-            emphasis_3 158 151 208
-        }
-        list_selected {
-            base 197 163 169
-            background 28 26 28
-            emphasis_0 158 151 208
-            emphasis_1 135 143 185
-            emphasis_2 135 143 185
-            emphasis_3 158 151 208
-        }
-        list_unselected {
-            base 197 163 169
-            background 28 26 28
-            emphasis_0 158 151 208
-            emphasis_1 135 143 185
-            emphasis_2 135 143 185
-            emphasis_3 158 151 208
-        }
-        frame_selected {
-            base 135 143 185
-            background 0
-            emphasis_0 158 151 208
-            emphasis_1 135 143 185
-            emphasis_2 158 151 208
-            emphasis_3 0
-        }
-        frame_highlight {
-            base 158 151 208
-            background 0
-            emphasis_0 158 151 208
-            emphasis_1 158 151 208
-            emphasis_2 158 151 208
-            emphasis_3 158 151 208
-        }
-        exit_code_success {
-            base 135 143 185
-            background 0
-            emphasis_0 135 143 185
-            emphasis_1 28 26 28
-            emphasis_2 158 151 208
-            emphasis_3 135 143 185
-        }
-        exit_code_error {
-            base 43 23 32
-            background 0
-            emphasis_0 158 151 208
-            emphasis_1 0
-            emphasis_2 0
-            emphasis_3 0
-        }
-        multiplayer_user_colors {
-            player_1 158 151 208
-            player_2 135 143 185
-            player_3 0
-            player_4 158 151 208
-            player_5 135 143 185
-            player_6 0
-            player_7 43 23 32
-            player_8 0
-            player_9 0
-            player_10 0
-        }
+      fg "#c5a3a9"        // na: main text
+      bg "#1c1a1c"        // bl: dark background
+      red "#2B1720"       // ia: pink
+      green "#878fb9"     // va: blue
+      yellow "#9e97d0"    // ca: purple (replaces yellow)
+      blue "#878fb9"      // va: blue
+      magenta "#9e97d0"   // ca: purple
+      cyan "#878fb9"      // va: blue
+      orange "#9e97d0"    // ca: purple
+      black "#1c1a1c"     // bl: background
+      white "#c5a3a9"     // na: light text
+    }
+
+    oldWorld {
+      fg "#C9C7CD"        // na: main text (light gray)
+      bg "#000000"        // bl: dark background (almost black)
+      red "#EA83A5"       // ia: intense pink
+      green "#90B99F"     // va: soft green
+      yellow "#E6B99D"    // ca: beige (replaces yellow)
+      blue "#85B5BA"      // va: blue-green
+      magenta "#92A2D5"   // ca: lavender blue
+      cyan "#85B5BA"      // va: blue-green
+      orange "#F5A191"    // ca: light peach
+      black "#000000"     // bl: dark background (almost black)
+      white "#C9C7CD"     // na: light text (light gray)
     }
 }
 
-// Plugin aliases - can be used to change the implementation of Zellij
-// changing these requires a restart to take effect
-plugins {
-    about location="zellij:about"
-    compact-bar location="zellij:compact-bar"
-    configuration location="zellij:configuration"
-    filepicker location="zellij:strider" {
-        cwd "/"
-    }
-    plugin-manager location="zellij:plugin-manager"
-    session-manager location="zellij:session-manager"
-    status-bar location="zellij:status-bar"
-    strider location="zellij:strider"
-    tab-bar location="zellij:tab-bar"
-    welcome-screen location="zellij:session-manager" {
-        welcome_screen true
-    }
-}
+theme "oldWorld"
 
-// Plugins to load in the background when a new session starts
-// eg. "file:/path/to/my-plugin.wasm"
-// eg. "https://example.com/my-plugin.wasm"
-load_plugins {
-}
- 
-// Use a simplified UI without special fonts (arrow glyphs)
-// Options:
-//   - true
-//   - false (Default)
-// 
-// simplified_ui true
- 
-// Choose the theme that is specified in the themes section.
-// Default: default
-// 
-theme "kanagawa_dragon"
- 
 // Choose the base input mode of zellij.
 // Default: normal
 // 
@@ -911,9 +356,7 @@ default_shell "fish"
 // default_cwd "/tmp"
  
 // The name of the default layout to load on startup
-// Default: "default"
-// 
-// default_layout "compact"
+// default_layout "work_oldWorld"
  
 // The folder in which Zellij will look for layouts
 // (Requires restart)
@@ -1060,18 +503,3 @@ scrollback_editor "nvim"
 // Default: true (if the host terminal supports it)
 // 
 // support_kitty_keyboard_protocol false
- 
-// Whether to stack panes when resizing beyond a certain size
-// Default: true
-// 
-// stacked_resize false
- 
-// Whether to show tips on startup
-// Default: true
-// 
-show_startup_tips false
- 
-// Whether to show release notes on first version run
-// Default: true
-// 
-// show_release_notes false
