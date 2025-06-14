@@ -15,6 +15,7 @@ pkgs=(
     slurp 
     jq
     grimshot
+    hyprlock
 )
 
 install_SwayNotificationCenter-git() {

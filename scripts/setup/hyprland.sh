@@ -13,6 +13,7 @@ pkgs=(
     fzf
     fd
     https://repos.fyralabs.com/terra41/swww-0:0.9.5-1.fc41.x86_64.rpm
+    hyprlock
 )
 
 install_dart-sass() {

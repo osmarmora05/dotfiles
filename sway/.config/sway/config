@@ -12,7 +12,7 @@ set $right k
 # Terminal
 set $term wezterm
 # Launcher
-set $menu rofi -show drun
+set $menu sherlock
 # File Explorer
 set $file_explorer nautilus
 
@@ -26,7 +26,7 @@ exec_always {
 
 ### ~~~Wallpaper~~~
 
-set $wall "$HOME/.config/sway/wallpaper.png"
+set $wall "$HOME/.config/sway/wallpaper.jpg"
 output * bg $wall fill
 # Screenshot dir
 set $screenshot_dir "$HOME/Imágenes/Screenshots/"
@@ -39,7 +39,8 @@ set $screenshot_dir "$HOME/Imágenes/Screenshots/"
 bindsym $mod+Control+q exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 # Reload the configuration file
 bindsym $mod+Control+r reload
-
+# LockScreen with hyprlock
+bindsym $mod+Control+l exec hyprlock
 ## Applications
 
 # Terminal
@@ -203,14 +204,14 @@ input "type:keyboard" {
 
 ### ~~~Swayfx~~~
 # corner_radius 10
-# blur on
-# blur_passes 3
-# blur_radius 8
-# blur_noise 0.02
-# shadows on
-# shadow_offset 0 0
-# shadow_blur_radius 50
-# shadow_color #000000FF
-# shadow_inactive_color #000000B0
+blur on
+blur_passes 3
+blur_radius 8
+blur_noise 0.02
+shadows on
+shadow_offset 0 0
+shadow_blur_radius 50
+shadow_color #000000FF
+shadow_inactive_color #000000B0
 
 include /etc/sway/config.d/*
