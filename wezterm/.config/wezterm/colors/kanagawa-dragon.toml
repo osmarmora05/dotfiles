@@ -1,0 +1,61 @@
+[colors]
+background = "#181616"
+cursor_bg = "#C5C9C5"
+cursor_border = "#C5C9C5"
+cursor_fg = "#C8C093"
+foreground = "#C5C9C5"
+selection_bg = "#7AA89F"
+selection_fg = "#181616"
+split = "#C8C093"
+
+ansi = [
+  "#0D0C0C",
+  "#C4746E",
+  "#8A9A7B",
+  "#C4B28A",
+  "#8BA4B0",
+  "#A292A3",
+  "#8EA4A2",
+  "#C8C093",
+]
+
+brights = [
+  "#A6A69C",
+  "#E46876",
+  "#87A987",
+  "#E6C384",
+  "#7FB4CA",
+  "#938AA9",
+  "#7AA89F",
+  "#C5C9C5",
+]
+
+[colors.tab_bar]
+background = "#C8C093"
+
+[colors.tab_bar.active_tab]
+bg_color = "#181616"
+fg_color = "#C5C9C5"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#C8C093"
+fg_color = "#C5C9C5"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#0D0C0C"
+fg_color = "#C5C9C5"
+
+[colors.tab.inactive_tab_edge]
+bg_color = "#0D0C0C"
+
+[colors.tab_bar.new_tab]
+bg_color = "#C8C093"
+fg_color = "#8EA4A2"
+
+[colors.tab.new_tab_hover]
+bg_color = "#0D0C0C"
+fg_color = "#C5C9C5"
+
+[metadata]
+name = 'Kanagawa Dragon'
+origin_url = ''
