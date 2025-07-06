@@ -6,3 +6,4 @@
 ./flatpak.sh
 ./sway.sh
 ./hyprland.sh
+./niri.sh
