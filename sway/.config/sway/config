@@ -40,7 +40,7 @@ bindsym $mod+Control+q exec swaynag -t warning -m 'You pressed the exit shortcut
 # Reload the configuration file
 bindsym $mod+Control+r reload
 # LockScreen with hyprlock
-bindsym $mod+Control+l exec hyprlock
+bindsym $mod+Alt+l exec hyprlock
 ## Applications
 
 # Terminal
