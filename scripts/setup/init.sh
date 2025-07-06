@@ -7,3 +7,4 @@
 ./sway.sh
 ./hyprland.sh
 ./niri.sh
+./crates.sh
