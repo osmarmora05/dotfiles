@@ -1,64 +1,54 @@
 layout {
     default_tab_template {
+        children
         pane size=1 borderless=true {
             plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
-            color_fg "#F8F8F2"
-            color_fg_muted "#6272A4"
-            color_bg "#282A36"
-            color_bg_muted "#44475A"
-            color_red "#FF5555"
-            color_green "#50FA7B"
-            color_yellow "#F1FA8C"
-            color_cyan "#8BE9FD"
-            color_orange "#FFB86C"
-            color_purple "#BD93F9"
+                format_left   "{mode} {tabs}"
+                format_center ""
+                format_right  "{pipe_zjstatus_hints}#[bg=magenta,fg=black,bold] {session} "
+                format_space  ""
+                pipe_zjstatus_hints_format "#[fg=white,bold] {output} "
+                border_enabled  "false"
+                border_char     "─"
+                border_format   "#[fg=white]{char}"
+                border_position "top"
 
-            tab_sync_indicator       "  "
-            tab_fullscreen_indicator " 󰊓 "
-            tab_floating_indicator   " 󰹙 "
+                hide_frame_for_single_pane "true"
 
-            format_left   "{mode} #[fg=$fg_muted,bold]{session}"
-            format_center "{tabs}"
-            format_right  ""
-            format_space  ""
+                mode_locked      "#[bg=magenta,fg=black,bold]  LOCK "
+                mode_normal      "#[bg=green,fg=black,bold]  NORMAL "
+                mode_resize      "#[bg=red,fg=black,bold]  RESIZE "
+                mode_pane        "#[bg=bright_blue,fg=black,bold]  PANE "
+                mode_move        "#[bg=magenta,fg=black,bold]  MOVE "
+                mode_tab         "#[bg=blue,fg=black,bold]  TAB "
+                mode_scroll      "#[bg=bright_white,fg=black,bold]  SCROLL "
+                mode_search      "#[bg=yellow,fg=black,bold]  SEARCH "
+                mode_entersearch "#[bg=yellow,fg=black,bold]  ENTER SEARCH "
+                mode_renametab   "#[bg=cyan,fg=black,bold]  RENAME TAB "
+                mode_renamepane  "#[bg=cyan,fg=black,bold]  RENAME PANE "
+                mode_session     "#[bg=red,fg=black,bold]  SESSION "
+                mode_tmux        "#[bg=bright_white,fg=black,bold]  TMUX "
 
-            border_enabled "false"
-            border_char "─"
-            border_format   "#[fg=#bg_muted]{char}"
-            border_position "top"
+                tab_active              "#[bg=cyan,fg=black,bold] {index} {name} {floating_indicator} "
+                tab_active_fullscreen   "#[bg=cyan,fg=black,bold] {fullscreen_indicator} {index} {name} "
+                tab_active_sync         "#[bg=cyan,fg=black,bold] {sync_indicator} {index} {name} "
 
-            hide_frame_for_single_pane "true"
+                tab_normal              "#[fg=bright_black,bold] {index} {name} {floating_indicator}"
+                tab_normal_fullscreen   "#[fg=bright_black,bold] {fullscreen_indicator} {index} {name}  "
+                tab_normal_sync         "#[fg=bright_black,bold] {sync_indicator} {index} {name} "
 
-            mode_normal        "#[fg=$green]█#[fg=$green,bold] NORMAL#[fg=$green]"
-            mode_locked        "#[fg=$red]█#[fg=$red,bold] LOCKED  #[fg=$red]"
-            mode_resize        "#[fg=$cyan]█#[fg=$cyan,bold] RESIZE#[fg=$blue]"
-            mode_pane          "#[fg=$cyan]█#[fg=$cyan,bold] PANE#[fg=$blue]"
-            mode_tab           "#[fg=$yellow]█#[fg=$yellow,bold] TAB#[fg=$yellow]"
-            mode_scroll        "#[fg=$cyan]█#[fg=$cyan,bold] SCROLL#[fg=$blue]"
-            mode_enter_search  "#[fg=$orange]█#[fg=$orange,bold] ENT-SEARCH#[fg=$orange]"
-            mode_search        "#[fg=$orange]█#[fg=$orange,bold] SEARCHARCH#[fg=$orange]"
-            mode_rename_tab    "#[fg=$yellow]█#[fg=$yellow,bold] RENAME-TAB#[fg=$yellow]"
-            mode_rename_pane   "#[fg=$cyan]█#[fg=$cyan,bold] RENAME-PANE#[fg=$blue]"
-            mode_session       "#[fg=$cyan]█#[fg=$cyan,bold] SESSION#[fg=$blue]"
-            mode_move          "#[fg=$cyan]█#[fg=$cyan,bold] MOVE#[fg=$blue]"
-            mode_prompt        "#[fg=$cyan]█#[fg=$cyan,bold] PROMPT#[fg=$blue]"
-            mode_tmux          "#[fg=$purple]█#[fg=purple,bold] TMUX#[fg=$purple]"
+                tab_separator " "
 
-            tab_normal              "#[bg=$fg_muted] #[bg=$fg_muted,fg=$bg,bold]{index} #[bg=$bg_muted,fg=$fg_muted,bold] {name}{floating_indicator}#[fg=$bg_muted,,bold]█"
-            tab_normal_fullscreen   "#[fg=$fg_muted]█#[bg=$fg_muted,fg=$bg,bold]{index} #[bg=$bg_muted,,fg=$fg_muted,bold] {name}{fullscreen_indicator}#[fg=$bg_muted,,bold]█"
-            tab_normal_sync         "#[fg=$fg_muted]█#[bg=$fg_muted,fg=$bg,bold]{index} #[bg=$bg_muted,,fg=$fg_muted,bold] {name}{sync_indicator}#[fg=$bg_muted,,bold]█"
+                tab_sync_indicator       "󰓦"
+                tab_fullscreen_indicator "󰊓"
+                tab_floating_indicator   " 󰹙 "
 
-            tab_active              "#[fg=$green]█#[bg=$green,fg=$bg,bold]{index} #[bg=$bg_muted,,fg=$green,bold] {name}{floating_indicator}#[bg=$bg_muted,,fg=$bg_muted,,bold]"
-            tab_active_fullscreen   "#[fg=$green]█#[bg=$green,fg=$bg,bold]{index} #[bg=$bg_muted,,fg=$green,bold] {name}{fullscreen_indicator}#[bg=$bg_muted,,fg=$bg_muted,,bold]"
-            tab_active_sync         "#[fg=$green]█#[bg=$green,fg=$bg,bold]{index} #[bg=$bg_muted,,fg=$green,bold] {name}{sync_indicator}#[bg=$bg_muted,,fg=$bg_muted,,bold]"
+                tab_rename              "#[bg=blue,fg=black,bold] {index} {name} {floating_indicator} "
 
-            tab_separator " "
-
-          }
-        }
-        children
-        pane size=1 borderless=true  {
-          plugin location="zellij:status-bar"
+                tab_display_count         "9"
+                tab_truncate_start_format "#[fg=yellow]  +{count}  "
+                tab_truncate_end_format   "#[fg=yellow]   +{count} "
+            }
         }
     }
 }
