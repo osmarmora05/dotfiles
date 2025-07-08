@@ -1,0 +1,212 @@
+{
+  "layer": "top",
+  "position": "top",
+  "exclusive": true,
+  "fixed-center": true,
+  "gtk-layer-shell": true,
+  "spacing": 0,
+  "margin-top": 0,
+  "margin-bottom": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+  "modules-left": [
+    "custom/wmname",
+    "niri/workspaces"
+  ],
+  "modules-right": [
+    "group/network-modules",
+    "group/wireplumber-modules",
+    "group/backlight-modules",
+    "group/battery-modules",
+    "tray",
+    "clock",
+    "group/powermenu"
+  ],
+  "custom/wmname": {
+    "format": "",
+    "tooltip": false
+  },
+  "niri/workspaces": {
+    "active-only": false,
+    "sort-by-number": true,
+    "all-outputs": true,
+    "format": "{icon}",
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    }
+  },
+  "group/network-modules": {
+    "modules": [
+      "network#icon",
+      "network#address"
+    ],
+    "orientation": "inherit"
+  },
+  "network#icon": {
+    "format-disconnected": "󰤮",
+    "format-ethernet": "󰈀",
+    "format-wifi": "󰤨",
+    "tooltip-format-wifi": "WiFi: {essid} ({signalStrength}%)\n󰅃 {bandwidthUpBytes} 󰅀 {bandwidthDownBytes}",
+    "tooltip-format-ethernet": "Ethernet: {ifname}\n󰅃 {bandwidthUpBytes} 󰅀 {bandwidthDownBytes}",
+    "tooltip-format-disconnected": "Disconnected"
+  },
+  "network#address": {
+    "format-disconnected": "Disconnected",
+    "format-ethernet": "{ipaddr}/{cidr}",
+    "format-wifi": "{essid}",
+    "tooltip-format-wifi": "WiFi: {essid} ({signalStrength}%)\n󰅃 {bandwidthUpBytes} 󰅀 {bandwidthDownBytes}",
+    "tooltip-format-ethernet": "Ethernet: {ifname}\n󰅃 {bandwidthUpBytes} 󰅀 {bandwidthDownBytes}",
+    "tooltip-format-disconnected": "Disconnected"
+  },
+  "group/wireplumber-modules": {
+    "modules": [
+      "wireplumber#icon",
+      "wireplumber#volume"
+    ],
+    "orientation": "inherit"
+  },
+  "wireplumber#icon": {
+    "format": "{icon}",
+    "format-muted": "󰖁",
+    "format-icons": [
+      "󰕿",
+      "󰖀",
+      "󰕾"
+    ],
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-scroll-up": "wpctl set-volume -l '1.0' @DEFAULT_AUDIO_SINK@ 1%+ --limit 1",
+    "on-scroll-down": "wpctl set-volume -l '1.0' @DEFAULT_AUDIO_SINK@ 1%- --limit 1",
+    "tooltip-format": "Volume: {volume}%"
+  },
+  "wireplumber#volume": {
+    "format": "{volume}%",
+    "tooltip-format": "Volume: {volume}%"
+  },
+  "group/backlight-modules": {
+    "modules": [
+      "backlight#icon",
+      "backlight#percent"
+    ],
+    "orientation": "inherit"
+  },
+  "backlight#icon": {
+    "format": "{icon}",
+    "format-icons": [
+      "󰃞",
+      "󰃟",
+      "󰃠"
+    ],
+    "on-scroll-up": "brightnessctl set 1%+",
+    "on-scroll-down": "brightnessctl set 1%-",
+    "tooltip-format": "Backlight: {percent}%"
+  },
+  "backlight#percent": {
+    "format": "{percent}%",
+    "tooltip-format": "Backlight: {percent}%"
+  },
+  "group/battery-modules": {
+    "modules": [
+      "battery#icon",
+      "battery#capacity"
+    ],
+    "orientation": "inherit"
+  },
+  "battery#icon": {
+    "format": "{icon}",
+    "format-charging": "󱐋",
+    "format-icons": [
+      "󰂎",
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ],
+    "format-plugged": "󰚥",
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "tooltip-format": "{timeTo}, {capacity}%"
+  },
+  "battery#capacity": {
+    "format": "{capacity}%",
+    "tooltip-format": "{timeTo}, {capacity}%"
+  },
+  "tray": {
+    "icon-size": 24,
+    "spacing": 10,
+    "show-passive-items": true
+  },
+  "clock": {
+    "actions": {
+      "on-scroll-down": "shift_down",
+      "on-scroll-up": "shift_up"
+    },
+    "calendar": {
+      "format": {
+        "days": "<span color='{gray1}'><b>{}</b></span>",
+        "months": "<span color='{white}'><b>{}</b></span>",
+        "today": "<span color='{white}'><b><u>{}</u></b></span>",
+        "weekdays": "<span color='{blue}'><b>{}</b></span>"
+      },
+      "mode": "month",
+      "on-scroll": 1
+    },
+    "format": "{:%I:%M %p}",
+    "tooltip-format": "{calendar}"
+  },
+  "group/powermenu": {
+    "drawer": {
+      "children-class": "powermenu-child",
+      "transition-duration": 300,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/power",
+      "custom/lock",
+      "custom/suspend",
+      "custom/exit",
+      "custom/reboot"
+    ],
+    "orientation": "inherit"
+  },
+  "custom/power": {
+    "format": "󰐥",
+    "on-click": "systemctl poweroff",
+    "tooltip": false
+  },
+  "custom/lock": {
+    "format": "󰌾",
+    "on-click": "loginctl lock-session",
+    "tooltip": false
+  },
+  "custom/suspend": {
+    "format": "󰤄",
+    "on-click": "systemctl suspend",
+    "tooltip": false
+  },
+  "custom/exit": {
+    "format": "󰍃",
+    "on-click": "hyprlock",
+    "tooltip": false
+  },
+  "custom/reboot": {
+    "format": "󰜉",
+    "on-click": "systemctl reboot",
+    "tooltip": false
+  }
+}

@@ -2,7 +2,10 @@
   "layer": "top",
   "width": 50,
   "position": "left",
-  "modules-left": ["custom/wmname", "sway/workspaces"],
+  "modules-left": [
+    "custom/wmname",
+    "sway/workspaces"
+  ],
   "modules-right": [
     "tray",
     "custom/notification",
@@ -10,7 +13,6 @@
     "clock",
     "group/powermenu"
   ],
-
   "group/network-pulseaudio-backlight-battery": {
     "orientation": "vertical",
     "modules": [
@@ -20,7 +22,6 @@
       "battery"
     ]
   },
-
   // Network
   "network": {
     "format-wifi": "󰤨",
@@ -30,7 +31,6 @@
     "tooltip-format-ethernet": "Ethernet: {ifname}\n󰅃 {bandwidthUpBytes} 󰅀 {bandwidthDownBytes}",
     "tooltip-format-disconnected": "Disconnected"
   },
-
   // Pulseaudio
   "group/audio-slider": {
     "orientation": "vertical",
@@ -39,10 +39,11 @@
       "children-class": "audio-slider-child",
       "transition-left-to-right": true
     },
-
-    "modules": ["pulseaudio", "pulseaudio/slider"]
+    "modules": [
+      "pulseaudio",
+      "pulseaudio/slider"
+    ]
   },
-
   "pulseaudio": {
     "format": "{icon}",
     "format-bluetooth": "󰂯",
@@ -55,18 +56,20 @@
       "phone": "",
       "portable": "",
       "car": " ",
-      "default": ["", "", ""]
+      "default": [
+        "",
+        "",
+        ""
+      ]
     },
     "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
     "tooltip-format": "Volume: {volume}%"
   },
-
   "pulseaudio/slider": {
     "min": 0,
     "max": 100,
     "orientation": "vertical"
   },
-
   // Backlight
   "group/light-slider": {
     "orientation": "vertical",
@@ -75,29 +78,50 @@
       "children-class": "light-slider-child",
       "transition-left-to-right": true
     },
-
-    "modules": ["backlight", "backlight/slider"]
+    "modules": [
+      "backlight",
+      "backlight/slider"
+    ]
   },
-
   "backlight": {
     "device": "amdgpu_bl2",
     "format": "{icon}",
-    "format-icons": ["󰝦", "󰪞", "󰪟", "󰪠", "󰪡", "󰪢", "󰪣", "󰪤", "󰪥"],
+    "format-icons": [
+      "󰝦",
+      "󰪞",
+      "󰪟",
+      "󰪠",
+      "󰪡",
+      "󰪢",
+      "󰪣",
+      "󰪤",
+      "󰪥"
+    ],
     "tooltip-format": "Backlight: {percent}%"
   },
-
   "backlight/slider": {
     "min": 0,
     "max": 100,
     "orientation": "vertical"
   },
-
   // Battery
   "battery": {
     "interval": 5,
     "format": "{icon}",
     "format-charging": "󱐋",
-    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "format-icons": [
+      "󰂎",
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ],
     "states": {
       "warning": 30,
       "critical": 20
@@ -105,7 +129,6 @@
     "format-plugged": "󰚥",
     "tooltip-format": "{timeTo}, {capacity}%"
   },
-
   // Clock
   "clock": {
     "interval": 1,
@@ -133,7 +156,6 @@
       "on-scroll-down": "shift_down"
     }
   },
-
   // Notification
   "custom/notification": {
     "tooltip": false,
@@ -160,7 +182,6 @@
     "on-click": "rofi -show drun",
     "tooltip": false
   },
-
   // Powermenu
   "group/powermenu": {
     "orientation": "vertical",
@@ -169,7 +190,6 @@
       "children-class": "powermenu-child",
       "transition-left-to-right": false
     },
-
     "modules": [
       "custom/power",
       "custom/exit",
@@ -178,42 +198,36 @@
       "custom/reboot"
     ]
   },
-
   "custom/power": {
     "format": "⏻",
     "on-click": "swaynag -t warning -m 'You have pressed the shortcut for poweroff. Do you really want to reboot?' -B 'Yes, poweroff' 'systemctl poweroff'",
     "tooltip-format": "Poweroff",
     "tooltip": true
   },
-
   "custom/exit": {
     "format": "󰈆",
     "on-click": "swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'",
     "tooltip-format": "Exit",
     "tooltip": true
   },
-
   "custom/lock": {
     "format": "󰌾",
     //     "on-click": "wlogout",
     "tooltip-format": "Lock",
     "tooltip": true
   },
-
   "custom/suspend": {
     "format": "󰤄",
     "on-click": "swaynag -t warning -m 'You have pressed the shortcut for suspend. Do you really want to suspend?' -B 'Yes, suspend' 'systemctl suspend'",
     "tooltip-format": "Suspend",
     "tooltip": true
   },
-
   "custom/reboot": {
     "format": "󰜉",
     "on-click": "swaynag -t warning -m 'You have pressed the shortcut for reboot. Do you really want to reboot?' -B 'Yes, reboot' 'systemctl reboot'",
     "tooltip-format": "Reboot",
     "tooltip": true
   },
-
   // Workspaces
   "sway/workspaces": {
     "all-outputs": true,
@@ -232,7 +246,6 @@
       "9": "9"
     }
   },
-
   // Systray
   "tray": {
     "icon-size": 19,

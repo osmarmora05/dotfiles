@@ -1,0 +1,199 @@
+@define-color black0 #1e1e2e;
+@define-color black3 #313244;
+@define-color white  #cdd6f4;
+@define-color gray0  #a6adc8;
+@define-color gray1  #6c7086;
+@define-color blue   #89b4fa;
+@define-color red    #f38ba8;
+
+/* Global */
+* {
+  all: unset;
+  font-family: "SpaceMono Nerd Font", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Menu */
+menu {
+  background: @black0;
+  border-radius: 12px;
+}
+menu separator {
+  background: @black3;
+}
+menu menuitem {
+  background: transparent;
+  padding: 0.5rem;
+}
+menu menuitem:hover {
+  background: @gray1;
+}
+menu menuitem:first-child {
+  border-radius: 12px 12px 0 0;
+}
+menu menuitem:last-child {
+  border-radius: 0 0 12px 12px;
+}
+menu menuitem:only-child {
+  border-radius: 12px;
+}
+
+/* Tooltip */
+tooltip {
+  background: @black0;
+  border-radius: 12px;
+}
+tooltip label {
+  margin: 0.5rem;
+}
+
+/* Waybar */
+window#waybar {
+  background: @black0;
+}
+.modules-left {
+  padding-left: 0.25rem;
+}
+.modules-right {
+  padding-right: 0.25rem;
+}
+
+/* Modules */
+#workspaces,
+#workspaces button,
+#idle_inhibitor,
+#network-modules,
+#wireplumber-modules,
+#backlight-modules,
+#battery-modules,
+#tray,
+#clock,
+#custom-exit,
+#custom-lock,
+#custom-suspend,
+#custom-reboot,
+#custom-power {
+  background: @black3;
+  border-radius: 8px;
+  margin: 0.5rem 0.25rem;
+}
+
+#window,
+#network.address,
+#wireplumber.volume,
+#backlight.percent,
+#battery.capacity,
+#tray,
+#clock {
+  padding: 0.25rem 0.75rem;
+}
+
+#idle_inhibitor,
+#network.icon,
+#wireplumber.icon,
+#backlight.icon,
+#battery.icon,
+#custom-exit,
+#custom-lock,
+#custom-suspend,
+#custom-reboot,
+#custom-power {
+  background: @blue;
+  color: @black3;
+  border-radius: 8px;
+  font-size: 13pt;
+  padding: 0.25rem;
+  min-width: 1.5rem;
+}
+
+/*wmname*/
+#custom-wmname {
+  font-size: 20px;
+  padding: 0.25rem 0.75rem;
+}
+
+/* Workspaces */
+#workspaces button {
+  margin: 0;
+  padding: 0.25rem;
+  min-width: 1.5rem;
+}
+#workspaces button label {
+  color: @white;
+}
+#workspaces button.empty label {
+  color: @gray0;
+}
+#workspaces button.urgent label,
+#workspaces button.active label {
+  color: @black3;
+}
+#workspaces button.urgent {
+  background: @red;
+}
+#workspaces button.active {
+  background: @blue;
+}
+
+/* Idle Inhibitor */
+#idle_inhibitor {
+  background: @black3;
+  color: @blue;
+}
+#idle_inhibitor.deactivated {
+  color: @gray0;
+}
+
+/* Systray */
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background: @red;
+}
+
+/* Hover effects */
+#workspaces button:hover,
+#idle_inhibitor:hover,
+#idle_inhibitor.deactivated:hover,
+#clock:hover {
+  background: @gray1;
+}
+#workspaces button.urgent:hover {
+  background: @red;
+}
+#workspaces button.active:hover,
+#network.icon:hover,
+#wireplumber.icon:hover,
+#custom-exit:hover,
+#custom-lock:hover,
+#custom-suspend:hover,
+#custom-reboot:hover,
+#custom-power:hover {
+  background: @blue;
+}
+#workspaces button.urgent:hover label,
+#workspaces button.active:hover label,
+#network.icon:hover label,
+#wireplumber.icon:hover label,
+#custom-exit:hover label,
+#custom-lock:hover label,
+#custom-suspend:hover label,
+#custom-reboot:hover label,
+#custom-power:hover label {
+  color: @black3;
+}
+#workspaces button:hover label {
+  color: @white;
+}
+#workspaces button.empty:hover label {
+  color: @gray0;
+}
+#idle_inhibitor:hover {
+  color: @blue;
+}
+#idle_inhibitor.deactivated:hover {
+  color: @gray0;
+}

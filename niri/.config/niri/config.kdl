@@ -359,6 +359,7 @@ binds {
     Mod+p { spawn "fuzzel"; }
     Super+Alt+L { spawn "hyprlock"; }
     Mod+Shift+e { spawn "nautilus"; }
+    Mod+Alt+b { spawn "sh" "-c" "pkill waybar || waybar -c ~/.config/waybar/niri/config.jsonc -s ~/.config/waybar/niri/style.css"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.

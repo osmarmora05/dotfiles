@@ -24,6 +24,8 @@ exec_always {
     gsettings set org.gnome.desktop.interface cursor-size "40"
 }
 
+exec waybar -c ~/.config/waybar/sway/config.jsonc -s ~/.config/waybar/sway/style.css
+
 ### ~~~Wallpaper~~~
 
 set $wall "$HOME/.config/sway/wallpaper.png"
@@ -151,10 +153,10 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 ### ~~~Bar~~~
-
-bar {
-    swaybar_command waybar
-}
+#
+# bar {
+#     swaybar_command waybar
+# }
 
 ### ~~~Rules~~~
 

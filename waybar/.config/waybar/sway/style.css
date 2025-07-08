@@ -32,22 +32,22 @@
 
 /*Dark decay*/
 
-/* @define-color colbg     #101419; 
-@define-color colbg2    #1c252c;
-@define-color colfg     #b6beca;
-@define-color colgrey   #5B6268;
-@define-color colcyan   #90daff;
-@define-color colgreen  #94f7c5;
-@define-color colorange #da8548;
-@define-color colmagenta #e2a6ff;
-@define-color colviolet #a9a1e1;
-@define-color colred    #fc7b81;
-@define-color colyellow #ffeba6; 
-@define-color border rgba(255, 255, 255, 0.1);*/
+/* @define-color colbg     #101419; */
+/* @define-color colbg2    #1c252c; */
+/* @define-color colfg     #b6beca; */
+/* @define-color colgrey   #5B6268; */
+/* @define-color colcyan   #90daff; */
+/* @define-color colgreen  #94f7c5; */
+/* @define-color colorange #da8548; */
+/* @define-color colmagenta #e2a6ff; */
+/* @define-color colviolet #a9a1e1; */
+/* @define-color colred    #fc7b81; */
+/* @define-color colyellow #ffeba6; */
+/* @define-color border rgba(255, 255, 255, 0.1); */
 
 /*Amarena*/
 
-/* @define-color colbg     #1A2026; 
+@define-color colbg     #1A2026;
 @define-color colbg2    #222a32;
 @define-color colfg     #FFFFFF;
 @define-color colgrey   #4f5e6c;
@@ -57,8 +57,8 @@
 @define-color colmagenta #CD84C8;
 @define-color colviolet #6EC1D6;
 @define-color colred    #FB6396;
-@define-color colyellow #F692B2; 
-@define-color border rgba(255, 255, 255, 0.1); */
+@define-color colyellow #F692B2;
+@define-color border rgba(255, 255, 255, 0.1);
 
 /*Oxocarbon*/
 
@@ -92,24 +92,24 @@
 
 /*Sexy*/
 
-@define-color colbg        #1D1F21; 
-@define-color colbg2       #282A2E;
-@define-color colfg        #C5C8C6;
-@define-color colgrey      #494e56;
-@define-color colcyan      #8ABEB7;
-@define-color colgreen     #B5BD68;
-@define-color colorange    #f78c6c;
-@define-color colmagenta   #B294BB;
-@define-color colviolet    #81A2BE;
-@define-color colred       #CC6666;
-@define-color colyellow    #F0C674;
-@define-color border rgba(255, 255, 255, 0.1);
+/* @define-color colbg        #1D1F21;  */
+/* @define-color colbg2       #282A2E; */
+/* @define-color colfg        #C5C8C6; */
+/* @define-color colgrey      #494e56; */
+/* @define-color colcyan      #8ABEB7; */
+/* @define-color colgreen     #B5BD68; */
+/* @define-color colorange    #f78c6c; */
+/* @define-color colmagenta   #B294BB; */
+/* @define-color colviolet    #81A2BE; */
+/* @define-color colred       #CC6666; */
+/* @define-color colyellow    #F0C674; */
+/* @define-color border rgba(255, 255, 255, 0.1); */
 
 * {
   border: 10px;
   border-radius: 0;
-  font-family: "IBM Plex Sans", "Material Icons", "Helvetica", "Arial",
-    "sans-serif";
+  font-family:
+    "IBM Plex Sans", "Material Icons", "Helvetica", "Arial", "sans-serif";
   font-size: 15px;
 }
 
@@ -117,6 +117,7 @@ window#waybar {
   background-color: @colbg;
   transition-property: background-color;
   transition-duration: 0.5s;
+  border-right: 1px solid @border;
 }
 
 window#waybar > box {
@@ -228,6 +229,7 @@ window#waybar.empty #window {
 #memory,
 #network,
 #pulseaudio,
+#wireplumber,
 #backlight,
 #tray {
   padding: 4px 2px 4px 0px;
