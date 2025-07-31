@@ -1,0 +1,61 @@
+[colors]
+background = "#0c0e0f"
+cursor_bg = "#d7e0e0"
+cursor_border = "#d7e0e0"
+cursor_fg = "#1d1e1f"
+foreground = "#d7e0e0"
+selection_bg = "#f2f4f5"
+selection_fg = "#0c0e0f"
+split = "#1d1e1f"
+
+ansi = [
+  "#181a1a",
+  "#df5b61",
+  "#78b892",
+  "#de8f78",
+  "#6791c9",
+  "#bc83e3",
+  "#67afc1",
+  "#e4e6e7",
+]
+
+brights = [
+  "#1d1e1f",
+  "#e8646a",
+  "#81c19b",
+  "#e79881",
+  "#709ad2",
+  "#c58cec",
+  "#70b8ca",
+  "#f2f4f5",
+]
+
+[colors.tab_bar]
+background = "#1d1e1f"
+
+[colors.tab_bar.active_tab]
+bg_color = "#0c0e0f"
+fg_color = "#d7e0e0"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#1d1e1f"
+fg_color = "#d7e0e0"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#181a1a"
+fg_color = "#d7e0e0"
+
+[colors.tab.inactive_tab_edge]
+bg_color = "#181a1a"
+
+[colors.tab_bar.new_tab]
+bg_color = "#1d1e1f"
+fg_color = "#e4e6e7"
+
+[colors.tab.new_tab_hover]
+bg_color = "#181a1a"
+fg_color = "#d7e0e0"
+
+[metadata]
+name = 'yoru'
+origin_url = 'https://github.com/raexera'

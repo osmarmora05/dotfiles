@@ -1,0 +1,61 @@
+[colors]
+background = "#14171b"
+cursor_bg = "#dee1e6"
+cursor_border = "#dee1e6"
+cursor_fg = "#1d2127"
+foreground = "#dee1e6"
+selection_bg = "#c0c3c7"
+selection_fg = "#14171b"
+split = "#1d2127"
+
+ansi = [
+  "#1c2128",
+  "#f3818b",
+  "#77d18b",
+  "#ecb083",
+  "#97ade5",
+  "#b99ada",
+  "#68c495",
+  "#ced1d6",
+]
+
+brights = [
+  "#1d2127",
+  "#ee7a84",
+  "#68cd7f",
+  "#eeaa77",
+  "#8fa7e6",
+  "#b994df",
+  "#5dbb8b",
+  "#c0c3c7",
+]
+
+[colors.tab_bar]
+background = "#1d2127"
+
+[colors.tab_bar.active_tab]
+bg_color = "#14171b"
+fg_color = "#dee1e6"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#1d2127"
+fg_color = "#dee1e6"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#1c2128"
+fg_color = "#dee1e6"
+
+[colors.tab.inactive_tab_edge]
+bg_color = "#1c2128"
+
+[colors.tab_bar.new_tab]
+bg_color = "#1d2127"
+fg_color = "#ced1d6"
+
+[colors.tab.new_tab_hover]
+bg_color = "#1c2128"
+fg_color = "#dee1e6"
+
+[metadata]
+name = "ghost"
+origin_url = "https://github.com/chxpdev"

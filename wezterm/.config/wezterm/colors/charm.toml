@@ -1,0 +1,62 @@
+
+[colors]
+background = "#151515"
+cursor_bg = "#C0C6D1"
+cursor_border = "#C0C6D1"
+cursor_fg = "#878787"
+foreground = "#C0C6D1"
+selection_bg = "#FFFDF5"
+selection_fg = "#151515"
+split = "#878787"
+
+ansi = [
+  "#151515",
+  "#ED567A",
+  "#02BF87",
+  "#F7D96B",
+  "#7571F9",
+  "#F780E2",
+  "#6DD7E0",
+  "#C0C6D1",
+]
+
+brights = [
+  "#878787",
+  "#ED567A",
+  "#02BF87",
+  "#F7D96B",
+  "#7571F9",
+  "#F780E2",
+  "#6DD7E0",
+  "#FFFDF5",
+]
+
+[colors.tab_bar]
+background = "#878787"
+
+[colors.tab_bar.active_tab]
+bg_color = "#151515"
+fg_color = "#C0C6D1"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#878787"
+fg_color = "#C0C6D1"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#151515"
+fg_color = "#C0C6D1"
+
+[colors.tab.inactive_tab_edge]
+bg_color = "#151515"
+
+[colors.tab_bar.new_tab]
+bg_color = "#878787"
+fg_color = "#FFFDF5"
+
+[colors.tab.new_tab_hover]
+bg_color = "#151515"
+fg_color = "#C0C6D1"
+
+[metadata]
+name = "charm"
+origin_url = "https://github.com/linuxmobile"

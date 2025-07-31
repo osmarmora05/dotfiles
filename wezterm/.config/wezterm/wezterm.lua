@@ -32,12 +32,15 @@ local themes = {
 	["Carburator"] = "Carburator",
 	["aphelion"] = "aphelion",
 	["kanagawa-dragon"] = "Kanagawa Dragon",
+	["charm"] = "charm",
+	["ghost"] = "ghost",
+	["yoru"] = "yoru",
 }
 
 return {
 
 	-- Color Scheme
-	color_scheme = themes["everblush"],
+	color_scheme = themes["ghost"],
 
 	color_schemes = {
 		["Builtin Solarized Dark"] = {
