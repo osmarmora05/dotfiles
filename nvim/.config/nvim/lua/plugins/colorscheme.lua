@@ -45,6 +45,18 @@ return {
     end,
   },
   {
+    "Everblush/nvim",
+    config = function()
+      require("everblush").setup({
+        transparent_background = true,
+      })
+    end,
+  },
+
+  {
+    "yorumicolors/yorumi.nvim",
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "adwaita",

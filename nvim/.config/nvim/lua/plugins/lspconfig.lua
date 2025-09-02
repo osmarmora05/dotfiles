@@ -9,6 +9,7 @@ return {
   opts = {
     servers = {
       cssls = {},
+      slint_lsp = {},
     },
   },
 }
