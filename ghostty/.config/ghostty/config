@@ -1,0 +1,14 @@
+font-family = CaskaydiaCove Nerd Font
+font-style = DemiLight
+font-feature = liga
+font-size = 13
+window-padding-x = 24
+window-padding-y = 24
+window-decoration = auto
+window-theme = system
+command = fish --login --interactive
+copy-on-select = true
+focus-follows-mouse = true
+# background-opacity = 0.96
+theme = ghost
+cursor-style = bar
