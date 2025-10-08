@@ -5,7 +5,6 @@ crates=(
   impala # TUI wifi for iwd
   bluetui # TUI bluetooth for bluez
   wiremix # TUI audio mixer for PipeWire
-  tray-tui # TUI for management system tray
 )
 
 

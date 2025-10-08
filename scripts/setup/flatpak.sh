@@ -12,7 +12,7 @@ flatpak_apps=(
   'org.gnome.design.IconLibraryv'
   'org.kde.umbrello'
   'com.librumreader.librum'
-  'net.christianbeier.Gromit-MPX'
+  'org.localsend.localsend_app'
 )
 
 if [ "$(id -u)" = 0 ]; then

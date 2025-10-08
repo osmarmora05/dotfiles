@@ -30,7 +30,6 @@ pkgs=(
     fzf
     cava
     stow
-    kde-connect
     inxi
     https://repos.fyralabs.com/terra41/zellij-0:0.42.2-1.fc41.x86_64.rpm
     https://ftp.lysator.liu.se/pub/opensuse/tumbleweed/repo/oss/x86_64/yazi-25.4.8-1.1.x86_64.rpm
