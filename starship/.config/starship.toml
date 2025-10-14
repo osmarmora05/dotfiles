@@ -115,3 +115,6 @@ renamed = "[● ](bright-blue)"
 modified = "[● ](yellow)"
 staged = "[● ](bright-cyan)"
 deleted = "[✕ ](red)"
+
+[battery]
+disabled = true
