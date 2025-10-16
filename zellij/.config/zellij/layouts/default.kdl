@@ -5,7 +5,7 @@ layout {
             plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
                 format_left   "{mode} {tabs}"
                 format_center ""
-                format_right  "{pipe_zjstatus_hints}#[bg=magenta,fg=black,bold] {session} "
+                format_right  "{pipe_zjstatus_hints}{command_battery}{datetime}#[bg=magenta,fg=black,bold] {session} "
                 format_space  ""
                 pipe_zjstatus_hints_format "#[fg=white,bold] {output} "
                 border_enabled  "false"
@@ -48,6 +48,14 @@ layout {
                 tab_display_count         "9"
                 tab_truncate_start_format "#[fg=yellow]  +{count}  "
                 tab_truncate_end_format   "#[fg=yellow]   +{count} "
+
+                datetime        "#[fg=blue,bold]  {format} "
+                datetime_format "%H:%M"
+                datetime_timezone "America/Managua"
+
+                command_battery_command  "bash -c 'echo $(cat /sys/class/power_supply/*/capacity)'"
+                command_battery_format   "#[fg=green,bold] 󱊣 {stdout}% "
+                command_battery_interval "1"
             }
         }
     }
