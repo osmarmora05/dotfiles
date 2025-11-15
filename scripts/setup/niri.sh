@@ -15,8 +15,14 @@ if [ "$(id -u)" = 0 ]; then
 fi
 
 install_niri() {
-  sudo dnf copr enable yalter/niri
-  sudo dnf install niri
+  sudo dnf copr enable yalter/niri -y
+  sudo dnf install niri -y
+}
+
+install_vicinae() {
+  if  [ ! "$(command -v vicinae)" ]; then
+    curl -fsSL https://vicinae.com/install.sh | bash
+  fi
 }
 
 echo "niri: "
@@ -32,6 +38,7 @@ for pkg in "${pkgs[@]}"; do
 done
 
 install_niri
+install_vicinae
 
 echo "Completed niri.sh"
 echo ""

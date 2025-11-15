@@ -259,6 +259,7 @@ environment {
 
 // spawn-at-startup "xwayland-satellite"
 // spawn-at-startup "swaybg" "-i" "~/.config/niri/wallpaper.jpg" "fill"
+spawn-at-startup "sh" "-c" "vicinae server"
 spawn-at-startup "sh" "-c" "xwayland-satellite"
 spawn-at-startup "sh" "-c" "swaybg -m fill -i $HOME/.config/niri/wallpaper.png"
 
@@ -357,7 +358,7 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+return { spawn "wezterm"; }
-    Mod+p { spawn "fuzzel"; }
+    Mod+p { spawn "vicinae" "toggle"; }
     Super+Alt+L { spawn "hyprlock"; }
     Mod+Shift+e { spawn "nautilus"; }
     Mod+Alt+b { spawn "sh" "-c" "pkill waybar || waybar -c ~/.config/waybar/niri/config.jsonc -s ~/.config/waybar/niri/style.css"; }
