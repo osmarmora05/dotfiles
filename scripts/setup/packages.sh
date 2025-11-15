@@ -61,6 +61,12 @@ install_duplicati() {
     sudo dnf install -y https://github.com/duplicati/duplicati/releases/download/v2.0.7.1-2.0.7.1_beta_2023-05-25/duplicati-2.0.7.1-2.0.7.1_beta_20230525.noarch.rpm
 }
 
+install_pkgs_COPR() {
+    # Ghostty
+    sudo dnf copr enable scottames/ghostty -y
+    sudo dnf install ghostty -y
+}
+
 if [ "$(id -u)" = 0 ]; then
     echo "This script SHOULD NOT BE RUN AS ROOT"
     exit 1
