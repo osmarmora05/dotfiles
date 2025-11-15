@@ -5,7 +5,7 @@ layout {
             plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
                 format_left   "{mode} {tabs}"
                 format_center ""
-                format_right  "{pipe_zjstatus_hints}{command_battery}{datetime}#[bg=magenta,fg=black,bold] {session} "
+                format_right  "{pipe_zjstatus_hints}{command_battery}{datetime} "
                 format_space  ""
                 pipe_zjstatus_hints_format "#[fg=white,bold] {output} "
                 border_enabled  "false"
@@ -15,27 +15,27 @@ layout {
 
                 hide_frame_for_single_pane "true"
 
-                mode_locked      "#[bg=magenta,fg=black,bold]  LOCK "
-                mode_normal      "#[bg=green,fg=black,bold]  NORMAL "
-                mode_resize      "#[bg=red,fg=black,bold]  RESIZE "
-                mode_pane        "#[bg=bright_blue,fg=black,bold]  PANE "
-                mode_move        "#[bg=magenta,fg=black,bold]  MOVE "
-                mode_tab         "#[bg=blue,fg=black,bold]  TAB "
-                mode_scroll      "#[bg=bright_white,fg=black,bold]  SCROLL "
-                mode_search      "#[bg=yellow,fg=black,bold]  SEARCH "
-                mode_entersearch "#[bg=yellow,fg=black,bold]  ENTER SEARCH "
-                mode_renametab   "#[bg=cyan,fg=black,bold]  RENAME TAB "
-                mode_renamepane  "#[bg=cyan,fg=black,bold]  RENAME PANE "
-                mode_session     "#[bg=red,fg=black,bold]  SESSION "
-                mode_tmux        "#[bg=bright_white,fg=black,bold]  TMUX "
+                mode_locked      "#[fg=magenta,bold]  LOCK "
+                mode_normal      "#[fg=green,bold]  NORMAL "
+                mode_resize      "#[fg=red,bold]  RESIZE "
+                mode_pane        "#[fg=bright_blue,bold]  PANE "
+                mode_move        "#[fg=magenta,bold]  MOVE "
+                mode_tab         "#[fg=blue,bold]  TAB "
+                mode_scroll      "#[fg=bright_white,bold]  SCROLL "
+                mode_search      "#[fg=yellow,bold]  SEARCH "
+                mode_entersearch "#[fg=yellow,bold]  ENTER SEARCH "
+                mode_renametab   "#[fg=cyan,bold]  RENAME TAB "
+                mode_renamepane  "#[fg=cyan,bold]  RENAME PANE "
+                mode_session     "#[fg=red,bold]  SESSION "
+                mode_tmux        "#[fg=bright_white,bold]  TMUX "
 
-                tab_active              "#[bg=cyan,fg=black,bold] {index} {name} {floating_indicator} "
-                tab_active_fullscreen   "#[bg=cyan,fg=black,bold] {fullscreen_indicator} {index} {name} "
-                tab_active_sync         "#[bg=cyan,fg=black,bold] {sync_indicator} {index} {name} "
+                tab_active              "#[bg=cyan,fg=black,bold] {index} {name} {floating_indicator}"
+                tab_active_fullscreen   "#[bg=cyan,fg=black,bold] {fullscreen_indicator} {index} {name}"
+                tab_active_sync         "#[bg=cyan,fg=black,bold] {sync_indicator} {index} {name}"
 
-                tab_normal              "#[fg=bright_black,bold] {index} {name} {floating_indicator}"
-                tab_normal_fullscreen   "#[fg=bright_black,bold] {fullscreen_indicator} {index} {name}  "
-                tab_normal_sync         "#[fg=bright_black,bold] {sync_indicator} {index} {name} "
+                tab_normal              "#[fg=bright_white] {index} {name} {floating_indicator}"
+                tab_normal_fullscreen   "#[fg=bright_white] {fullscreen_indicator} {index} {name}"
+                tab_normal_sync         "#[fg=bright_white] {sync_indicator} {index} {name}"
 
                 tab_separator " "
 
@@ -49,12 +49,13 @@ layout {
                 tab_truncate_start_format "#[fg=yellow]  +{count}  "
                 tab_truncate_end_format   "#[fg=yellow]   +{count} "
 
-                datetime        "#[fg=blue,bold]  {format} "
+                datetime        "#[fg=blue,bold]  #[fg=white]{format} "
                 datetime_format "%H:%M"
                 datetime_timezone "America/Managua"
 
+
                 command_battery_command  "bash -c 'echo $(cat /sys/class/power_supply/*/capacity)'"
-                command_battery_format   "#[fg=green,bold] 󱊣 {stdout}% "
+                command_battery_format   "#[fg=green,bold] 󱊣 #[fg=white]{stdout}% "
                 command_battery_interval "1"
             }
         }
