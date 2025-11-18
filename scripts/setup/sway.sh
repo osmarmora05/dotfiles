@@ -36,7 +36,7 @@ for pkg in "${pkgs[@]}"; do
     sudo dnf install -y "$pkg"
 done
 
-install_SwayNotificationCenter
+install_SwayNotificationCenter-git
 
 echo "Completed sway.sh"
 echo ""
