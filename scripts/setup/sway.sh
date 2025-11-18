@@ -19,8 +19,8 @@ pkgs=(
 )
 
 install_SwayNotificationCenter-git() {
-    sudo dnf copr enable erikreider/SwayNotificationCenter
-    sudo dnf install SwayNotificationCenter-git
+    sudo dnf copr enable erikreider/SwayNotificationCenter -y
+    sudo dnf install SwayNotificationCenter-git -y
 }
 
 if [ "$(id -u)" = 0 ]; then
