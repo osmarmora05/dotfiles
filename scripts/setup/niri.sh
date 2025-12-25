@@ -6,6 +6,7 @@ pkgs=(
   brightnessctl
   wireplumber
   hyprlock
+  https://repos.fyralabs.com/terra43/matugen-0:2.4.1-1.fc43.x86_64.rpm
 )
 
 
@@ -25,6 +26,11 @@ install_vicinae() {
   fi
 }
 
+install_DankMaterialShell() {
+  sudo dnf copr enable avengemedia/dms -y
+  sudo dnf install dms -y
+}
+
 echo "niri: "
 echo "- pkgs:"
 echo ""${pkgs[@]}""
@@ -39,6 +45,7 @@ done
 
 install_niri
 install_vicinae
+install_DankMaterialShell
 
 echo "Completed niri.sh"
 echo ""

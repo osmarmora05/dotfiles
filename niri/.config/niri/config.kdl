@@ -259,9 +259,10 @@ environment {
 
 // spawn-at-startup "xwayland-satellite"
 // spawn-at-startup "swaybg" "-i" "~/.config/niri/wallpaper.jpg" "fill"
+spawn-at-startup "dms" "run"
 spawn-at-startup "sh" "-c" "vicinae server"
 spawn-at-startup "sh" "-c" "xwayland-satellite"
-spawn-at-startup "sh" "-c" "swaybg -m fill -i $HOME/.config/niri/wallpaper.png"
+// spawn-at-startup "sh" "-c" "swaybg -m fill -i $HOME/.config/niri/wallpaper.png"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
@@ -359,9 +360,9 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+return { spawn "wezterm"; }
     Mod+p { spawn "vicinae" "toggle"; }
-    Super+Alt+L { spawn "hyprlock"; }
+    // Super+Alt+L { spawn "hyprlock"; }
     Mod+Shift+e { spawn "nautilus"; }
-    Mod+Alt+b { spawn "sh" "-c" "pkill waybar || waybar -c ~/.config/waybar/niri/config.jsonc -s ~/.config/waybar/niri/style.css"; }
+    // Mod+Alt+b { spawn "sh" "-c" "pkill waybar || waybar -c ~/.config/waybar/niri/config.jsonc -s ~/.config/waybar/niri/style.css"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
@@ -369,14 +370,16 @@ binds {
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.
+    // XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "10%+" "--limit 1"; }
+    // XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "10%-" "--limit 1"; }
 
-    XF86AudioRaiseVolume  allow-when-locked=true { spawn "sh" "-c" "wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%+ --limit 1"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn "sh" "-c" "wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%- --limit 1"; }
-    XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
-    XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
-
-    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "s" "+10%"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "s" "10%-"; }
+    // XF86AudioRaiseVolume  allow-when-locked=true { spawn "sh" "-c" "wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%+ --limit 1"; }
+    // XF86AudioLowerVolume allow-when-locked=true { spawn "sh" "-c" "wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%- --limit 1"; }
+    // XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
+    // XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
+    //
+    // XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "s" "+10%"; }
+    // XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "s" "10%-"; }
 
     Mod+Q { close-window; }
 
@@ -596,3 +599,8 @@ binds {
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
 }
+
+include "dms/colors.kdl"
+include "dms/alttab.kdl"
+include "dms/binds.kdl"
+include "dms/wpblur.dkl"
