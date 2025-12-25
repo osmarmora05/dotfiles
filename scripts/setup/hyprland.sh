@@ -13,6 +13,7 @@ pkgs=(
     fzf
     fd
     https://repos.fyralabs.com/terra41/swww-0:0.9.5-1.fc41.x86_64.rpm
+    https://repos.fyralabs.com/terra43/matugen-0:2.4.1-1.fc43.x86_64.rpm
     hyprlock
 )
 
@@ -23,16 +24,6 @@ install_dart-sass() {
     tar -xzf dart-sass-1.77.0-linux-x64.tar.gz
     cd dart-sass
     sudo cp -rf * /usr/local/bin/
-}
-
-install_matugen() {
-    if [ ! "$(command -v cargo)" ];  then
-        echo "You dont' have rust, therefore matugen cannot be installed"
-        exit 1
-    fi
-    sudo dnf install gcc make
-    echo "- Installing matugen"
-    cargo install matugen
 }
 
 install_ags() {
@@ -87,7 +78,6 @@ for pkg in "${pkgs[@]}"; do
 done
 
 install_dart-sass
-install_matugen
 install_ags
 
 echo "Completed hyprland.sh"
