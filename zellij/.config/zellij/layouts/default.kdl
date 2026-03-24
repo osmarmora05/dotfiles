@@ -5,9 +5,8 @@ layout {
             plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
                 format_left   "{mode} {tabs}"
                 format_center ""
-                format_right  "{pipe_zjstatus_hints}{command_battery}{datetime} "
+                format_right  "{command_battery}{datetime} "
                 format_space  ""
-                pipe_zjstatus_hints_format "#[fg=white,bold] {output} "
                 border_enabled  "false"
                 border_char     "─"
                 border_format   "#[fg=white]{char}"
