@@ -327,6 +327,7 @@ window-rule {
 
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
     match app-id=r#"^org\.gnome\.World\.Secrets$"#
+    match title=r#"WhatsApp"#
 
     block-out-from "screen-capture"
 
@@ -342,6 +343,45 @@ window-rule {
     open-maximized true
 }
 
+window-rule {
+    match is-floating=true
+
+    geometry-corner-radius 13
+    clip-to-geometry true
+
+    border {
+        on
+        width 1
+        active-color "#343438"
+        inactive-color "#28282C"
+        urgent-color "#ffb86b"
+    }
+
+    shadow {
+        on
+        softness 10
+        spread 6
+        offset x=1 y=1
+        color "rgba(14,14,14,0.6)"
+    }
+}
+
+window-rule {
+    match is-floating=true is-active=true
+
+    shadow {
+        on
+        softness 10
+        spread 4
+        offset x=1 y=1
+        color "rgba(4,4,4,0.7)"
+    }
+}
+
+window-rule {
+    match is-floating=false
+    geometry-corner-radius 0
+}
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
     // in the end. To find an XKB name for a particular key, you may use a program
@@ -359,6 +399,7 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+return { spawn "wezterm"; }
+    Mod+return { spawn "ghostty"; }
     Mod+p { spawn "vicinae" "toggle"; }
     // Super+Alt+L { spawn "hyprlock"; }
     Mod+Shift+e { spawn "nautilus"; }
