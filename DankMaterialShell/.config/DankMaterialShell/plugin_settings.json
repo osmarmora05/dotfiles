@@ -1,0 +1,23 @@
+{
+  "dankBatteryAlerts": {
+    "enabled": true
+  },
+  "floaty": {
+    "enabled": false
+  },
+  "dankAudioVisualizer": {
+    "enabled": true
+  },
+  "mediaPlayer": {
+    "enabled": false
+  },
+  "cavaVisualizer": {
+    "enabled": false
+  },
+  "musicTheme": {
+    "enabled": true
+  },
+  "mediaFrame": {
+    "enabled": true
+  }
+}

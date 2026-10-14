@@ -1,0 +1,23 @@
+{
+  "lockfileVersion": 1,
+  "plugins": {
+    "cavaVisualizer": {
+      "repo": "https://github.com/ernestowgg/cava-visualizer",
+      "commit": "2d08bef95bc7cd170ad5730a27791c9af6d80a52"
+    },
+    "dankBatteryAlerts": {
+      "repo": "https://github.com/AvengeMedia/dms-plugins",
+      "path": "DankBatteryAlerts",
+      "commit": "ec1685daf791c5c9d30fd0f3bd7aeafcb063dddd"
+    },
+    "mediaFrame": {
+      "repo": "https://codeberg.org/claymorwan/dms-plugins",
+      "path": "mediaFrame",
+      "commit": "c0de20519e991a0cbf826da5618bc59127a2d4da"
+    },
+    "musicTheme": {
+      "repo": "https://github.com/felipeadeildo/dms-music-theme",
+      "commit": "b7314c0644b5a74490d62568bd7810a42284976c"
+    }
+  }
+}
