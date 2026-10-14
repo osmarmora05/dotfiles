@@ -4,15 +4,14 @@ flatpak_apps=(
   'com.discordapp.Discord'
   'com.github.finefindus.eyedropper'
   'com.github.zocker_160.SyncThingy'
-  'com.mattjakeman.ExtensionManager'
-  'io.github.seadve.Kooha'
   'md.obsidian.Obsidian'
-  'org.gnome.Music'
-  'org.gnome.design.Contrast'
-  'org.gnome.design.IconLibraryv'
-  'org.kde.umbrello'
+  'org.kde.kontrast'
   'com.librumreader.librum'
   'org.localsend.localsend_app'
+  'be.alexandervanhee.gradia'
+  'tech.dongdongbh.mindwtr'
+  'org.onlyoffice.desktopeditors'
+  'it.mijorus.gearlever'
 )
 
 if [ "$(id -u)" = 0 ]; then
