@@ -1,0 +1,5 @@
+name: responsively-app
+strategy:
+  strategy: forge
+  repository: "https://github.com/responsively-org/responsively-app-releases"
+  asset_match_regex: "^ResponsivelyApp-[0-9]+\\.[0-9]+\\.[0-9]+\\.AppImage$"

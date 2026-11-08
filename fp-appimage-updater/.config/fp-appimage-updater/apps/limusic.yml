@@ -1,0 +1,5 @@
+name: limusic
+strategy:
+  strategy: forge
+  repository: "https://github.com/SimoHypers/limusic"
+  asset_match: "*_amd64.AppImage"
