@@ -12,6 +12,7 @@ flatpak_apps=(
   'tech.dongdongbh.mindwtr'
   'org.onlyoffice.desktopeditors'
   'it.mijorus.gearlever'
+  'com.abdownloadmanager.abdownloadmanager'
 )
 
 if [ "$(id -u)" = 0 ]; then
