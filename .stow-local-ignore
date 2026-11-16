@@ -28,4 +28,6 @@ vscode
 p10k
 zsh
 scripts
+nixos
+fonts
 ^/.*\.md
