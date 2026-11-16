@@ -1,7 +1,9 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
     zoxide init fish | source
-    starship init fish | source	
+    starship init fish | source
+    eval (zellij setup --generate-auto-start fish | string collect)
+    atuin init fish | source
     # oh-my-posh init fish --config "~/.config/oh-my-posh.toml" | source
     # Set the Android SDK home directory
     # set -x ANDROID_HOME $HOME/Android/Sdk
