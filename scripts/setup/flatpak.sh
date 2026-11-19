@@ -2,11 +2,8 @@
 
 flatpak_apps=(
   'com.discordapp.Discord'
-  'com.github.finefindus.eyedropper'
-  'com.github.zocker_160.SyncThingy'
   'md.obsidian.Obsidian'
   'org.kde.kontrast'
-  'com.librumreader.librum'
   'org.localsend.localsend_app'
   'be.alexandervanhee.gradia'
   'tech.dongdongbh.mindwtr'
@@ -24,6 +21,8 @@ if  [ ! "$(command -v flatpak)" ]; then
     echo "You don't have flatpak installed"
     exit 1
 fi
+
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 echo "flatpak: "
 echo "- Programs:"
