@@ -21,7 +21,22 @@
     # Use the helper to generate the packages attribute for every system
     packages = forAllSystems (
       pkgs: let
-        pkgList = with pkgs; [];
+        pkgList = with pkgs; [
+          # LSPs
+          nixd
+          nil
+
+
+          # Base
+          lua5_1
+          tree-sitter
+          ripgrep
+          fzf
+          luarocks
+          gcc
+          gnumake
+          pkg-config
+        ];
       in {
         # Define the default package for this system
         default = inputs.wrappers.wrappers.neovim.wrap {
