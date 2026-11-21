@@ -401,7 +401,7 @@ binds {
     Mod+return { spawn "ghostty"; }
     Mod+p { spawn "vicinae" "toggle"; }
     // Super+Alt+L { spawn "hyprlock"; }
-    Mod+Shift+e { spawn "nautilus"; }
+    Mod+Shift+e { spawn "dolphin"; }
     // Mod+Alt+b { spawn "sh" "-c" "pkill waybar || waybar -c ~/.config/waybar/niri/config.jsonc -s ~/.config/waybar/niri/style.css"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
