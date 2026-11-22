@@ -262,6 +262,7 @@ environment {
 spawn-at-startup "dms" "run"
 spawn-at-startup "sh" "-c" "vicinae server"
 spawn-at-startup "sh" "-c" "xwayland-satellite"
+spawn-at-startup "sh" "-c" "duplicati"
 // spawn-at-startup "sh" "-c" "swaybg -m fill -i $HOME/.config/niri/wallpaper.png"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
