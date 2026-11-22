@@ -6,10 +6,10 @@ flatpak_apps=(
   'org.kde.kontrast'
   'org.localsend.localsend_app'
   'be.alexandervanhee.gradia'
-  'tech.dongdongbh.mindwtr'
   'org.onlyoffice.desktopeditors'
   'it.mijorus.gearlever'
   'com.abdownloadmanager.abdownloadmanager'
+  'io.github.martchus.syncthingtray'
 )
 
 if [ "$(id -u)" = 0 ]; then
