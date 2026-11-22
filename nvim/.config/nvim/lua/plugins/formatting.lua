@@ -22,6 +22,7 @@ return {
         graphql = { "prettier" },
         liquid = { "prettier" },
         lua = { "stylua" },
+        nix = { "nixfmt" },
       },
       formatters = {
         injected = { options = { ignore_errors = true } },
