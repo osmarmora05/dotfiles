@@ -314,6 +314,7 @@ window-rule {
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     match app-id=r#"^org\.gnome\.Nautilus$"#
+    match app-id=r#"^org\.kde\.dolphin$"#
     match app-id=r#"^org\.gnome\.Calculator$"#
     match app-id=r#"^org\.gnome\.Loupe$"#
     match app-id=r#"^org\.gnome\.Calendar$"#
